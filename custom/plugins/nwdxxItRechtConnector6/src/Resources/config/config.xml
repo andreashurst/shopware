@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+
+        <title>Konfiguration</title>
+        <title lang="de-DE">Configuration</title>
+
+        <input-field type="text">
+            <name>authToken</name>
+            <disabled>true</disabled>
+            <copyable>true</copyable>
+            <label>User Auth Token</label>
+            <label lang="de-DE">Authentifizierungstoken</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>tosDownload</name>
+            <label>Import ToS as PDF.</label>
+            <label lang="de-DE">AGB als PDF importieren und im Medienmanager bereitstellen.</label>
+        </input-field>
+
+        <input-field type="bool">
+            <name>revocationDownload</name>
+            <label>Import Revocation as PDF.</label>
+            <label lang="de-DE">Widerrufsbelehrung als PDF importieren und im Medienmanager bereitstellen.</label>
+        </input-field>
+    </card>
+</config>

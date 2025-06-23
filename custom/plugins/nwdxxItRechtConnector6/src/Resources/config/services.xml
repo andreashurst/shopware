@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="Nwdxx\ItRechtConnector6\Services\ConnectorService">
+            <call method="setCacheClearer">
+                <argument type="service" id="Shopware\Core\Framework\Adapter\Cache\CacheClearer"/>
+            </call>
+            <call method="setSalesChannelRepository">
+                <argument type="service" id="sales_channel.repository"/>
+            </call>
+            <call method="setCmsPageRepository">
+                <argument type="service" id="cms_page.repository" />
+            </call>
+            <call method="setCmsSlotRepository">
+                <argument type="service" id="cms_slot.repository" />
+            </call>
+            <call method="setCmsBlockRepository">
+                <argument type="service" id="cms_block.repository" />
+            </call>
+            <call method="setCategoryRepository">
+                <argument type="service" id="category.repository" />
+            </call>
+            <call method="setCustomFieldSetRepository">
+                <argument type="service" id="custom_field_set.repository" />
+            </call>
+            <call method="setLanguageRepository">
+                <argument type="service" id="language.repository" />
+            </call>
+            <call method="setLocaleRepository">
+                <argument type="service" id="locale.repository" />
+            </call>
+            <call method="setFileFetcher">
+                <argument type="service" id="Shopware\Core\Content\Media\File\FileFetcher" />
+            </call>
+            <call method="setFileSaver">
+                <argument type="service" id="Shopware\Core\Content\Media\File\FileSaver" />
+            </call>
+            <call method="setMediaRepository">
+                <argument type="service" id="media.repository" />
+            </call>
+            <call method="setMediaFolderRepository">
+                <argument type="service" id="media_folder.repository" />
+            </call>
+            <call method="setRouter">
+                <argument type="service" id="router.default"/>
+            </call>
+            <call method="setSystemConfigService">
+                <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService" />
+            </call>
+        </service>
+        <service id="Nwdxx\ItRechtConnector6\Controller\LegalController" public="true">
+            <argument type="service" id="Nwdxx\ItRechtConnector6\Services\ConnectorService" />
+            <argument type="service" id="Shopware\Core\Framework\Plugin\PluginService" />
+            <argument type="string">%kernel.shopware_version%</argument>
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+        </service>
+    </services>
+</container>

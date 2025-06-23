@@ -1,0 +1,45 @@
+{
+  "name": "nwdxx/it-recht-connector6",
+  "description": "IT-Recht Kanzlei Connector",
+  "version": "1.2.8",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "IT-Recht Kanzlei",
+      "email": "info@it-recht-kanzlei.de",
+      "role": "Developer"
+    },
+    {
+      "name": "Nordisch Webdesign",
+      "email": "info@nordisch-webdesign.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "shopware/core": ">=6.4.11 <6.8",
+    "ext-simplexml": "*"
+  },
+  "extra": {
+    "shopware-plugin-class": "Nwdxx\\ItRechtConnector6\\nwdxxItRechtConnector6",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "label": {
+      "de-DE": "It-Recht Kanzlei Connector",
+      "en-GB": "It-Recht Kanzlei Connector"
+    },
+    "description": {
+      "de-DE": "Datenschnittstelle zur Übertragung von Rechtstexten der IT-Recht Kanzlei.",
+      "en-GB": "API for receiving legal texts of the IT-Recht Kanzlei."
+    },
+    "manufacturerLink": {
+      "de-DE": "https://store.shopware.com/it-recht-kanzlei.html",
+      "en-GB": "https://store.shopware.com/en/it-recht-kanzlei.html"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Nwdxx\\ItRechtConnector6\\": "src/",
+      "ITRechtKanzlei\\": "src/Resources/sdk/"
+    }
+  }
+}
