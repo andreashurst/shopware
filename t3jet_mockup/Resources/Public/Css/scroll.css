@@ -1,0 +1,221 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica;
+	color: #444;
+}
+
+a {
+	color: #fff;
+	text-decoration:none
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+h2, h3, h4, h5 {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+nav>ul>li b {
+	font-size: 12px;
+}
+
+nav>ul>li span {;
+	font-size: 10px;
+}
+
+p {
+	font-size:16px
+}
+
+#mask {
+	z-index: 0;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	overflow:hidden
+}
+
+#container {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transition-property: top, bottom;
+	-webkit-transition-duration: .5s;
+	-moz-property: top, bottom;
+	-moz-duration: .5s;
+	-ms-property: top, bottom;
+	-ms-duration: .5s;
+	-o-property: top, bottom;
+	-o-duration: .5s;
+	transition-property: top, bottom;
+	transition-duration:.5s
+}
+
+section {
+	height: 100vh;
+	width: 100vw;
+	position:relative
+}
+
+.content {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top:150px
+}
+
+nav ul {
+	z-index: 1;
+	list-style: none;
+	position: fixed;
+	right: 10px;
+	top:10%
+}
+
+nav ul li {
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100px
+}
+
+.code {
+	margin-top: 15px;
+	background: #fff;
+	border: 1px dotted #000;
+	padding: 5px 0;
+	color: #000;
+	width:300px
+}
+
+.arrowdown {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 10px 0;
+	border-color: #000 transparent transparent;
+	cursor:pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 10;
+}
+
+.arrowup {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 10px;
+	border-color: transparent transparent #000;
+	cursor:pointer;
+	position: fixed;
+	top: 20px;
+	right: 30px;
+	z-index: 10;
+}
+
+.turquoise-bg {
+	background:#1abc9c;
+}
+
+.carrot-bg {
+	background:#e67e22;
+}
+
+.blue-bg {
+	background: #2980b9;
+}
+
+nav>ul>li {
+	transition: all 1s ease;
+	opacity: .2;
+	width: 60px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+nav>ul>li.active {
+	opacity: 1;
+}
+nav>ul>li:hover {
+	opacity: .7;
+}
+
+xxxsection {
+  background-image: url("../Images/background.jpg");
+}
+section {
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+
+nav>ul>li b {
+	color: #000;
+	display: block;
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px -100px;
+}
+
+nav>ul>li span {
+	font-weight: normal;
+	padding: 0px 0px 0px 0px;
+	margin: 24px 0px 0px -100px;
+}
+
+h1, h2 {
+	color: #000;
+	display: inline;
+	margin-left: 10px;
+}
+
+.display .header {
+	color: #000;
+	margin-left: 50%;
+	border-left: 1px solid #000;
+	padding-top: 40px;
+	display: none;
+}
+
+.hide {
+	display: none;
+}
+
+@media (max-width: 1280px) {
+	nav>ul>li b { display: none; }
+	nav>ul>li span { display: none; }
+}
+
+@media (max-width: 768px) {
+	.header>h2 { display: none; }
+}
+
+
+nav>ul>li.ultrawide-thumbnail { background-image: url("../Images/ultrawide-thumbnail.png"); }
+nav>ul>li.desktop-thumbnail { background-image: url("../Images/desktop-thumbnail.png"); }
+nav>ul>li.desktop-thumbnail { background-image: url("../Images/desktop-thumbnail.png"); }
+nav>ul>li.desktop-thumbnail { background-image: url("../Images/desktop-thumbnail.png"); }
+nav>ul>li.laptop-thumbnail { background-image: url("../Images/laptop-thumbnail.png"); }
+nav>ul>li.laptop-thumbnail { background-image: url("../Images/laptop-thumbnail.png"); }
+nav>ul>li.laptop-thumbnail { background-image: url("../Images/laptop-thumbnail.png"); }
+nav>ul>li.tabletlandscape-thumbnail { background-image: url("../Images/tabletlandscape-thumbnail.png"); }
+nav>ul>li.tablet-thumbnail { background-image: url("../Images/tablet-thumbnail.png"); }
+nav>ul>li.mobile-thumbnail { background-image: url("../Images/mobile-thumbnail.png"); }
+nav>ul>li.iphone12max-thumbnail { background-image: url("../Images/iphone12max-thumbnail.png"); }
+nav>ul>li.iphone12-thumbnail { background-image: url("../Images/iphone12max-thumbnail.png"); }
+nav>ul>li.iphone11pro-thumbnail { background-image: url("../Images/iphone11pro-thumbnail.png"); }
+nav>ul>li.iphone6plus-thumbnail { background-image: url("../Images/iphone6plus-thumbnail.png"); }
+nav>ul>li.iphone6-thumbnail { background-image: url("../Images/iphone6-thumbnail.png"); }
+nav>ul>li.iphone5-thumbnail { background-image: url("../Images/iphone5-thumbnail.png"); }
+nav>ul>li.iphone4-thumbnail { background-image: url("../Images/iphone4-thumbnail.png"); }
+nav>ul>li.iphone6landscape-thumbnail { background-image: url("../Images/iphone6landscape-thumbnail.png"); }

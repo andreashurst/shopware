@@ -1,0 +1,14 @@
+.iphone5 {
+	--resolution: 320;
+	--default-scale: .4;
+}
+
+.iphone5 .wrapper {
+	--screen-width: 640;
+	--screen-height: 1136;
+	--image-width: 1100;
+	--image-height: 1560;
+	--border-radius: 0;
+	--default-top: 0;
+	background-image: url("../Images/iphone5.png");
+}

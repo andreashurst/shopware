@@ -1,0 +1,14 @@
+.tabletlandscape {
+	--resolution: 1024;
+	--default-scale: .8;
+}
+
+.tabletlandscape .wrapper {
+	--screen-width: 1024;
+	--screen-height: 768;
+	--image-width: 1424;
+	--image-height: 1168;
+	--border-radius: 38;
+	--default-top: 40;
+	background-image: url("../Images/tabletlandscape.png");
+}

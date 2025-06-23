@@ -1,0 +1,29 @@
+@import url(all.css);
+@import url(all.scale.small.css);
+
+.ultrawide { --left: 15%; --top: 10% }
+.desktop { --left: 15%;  --top: 42% }
+.desktop-xl { --left: 37%;  --top: 10% }
+.desktop-xxl { --left: 62%; --top: 10% }
+.laptop { --left: 62%; --top: 44%}
+.laptop-xl { --left: 37%; --top: 44%}
+.laptop-xxl { --left: 87%; --top: 11%}
+.tablet { --left: 15%; --top: 75% }
+.tabletlandscape { --left: 87%; --top: 43% }
+.mobile { --left: 37%; --top: 78%}
+.iphone6 { --left: 62%; --top: 78%}
+.iphone6landscape { --left: 85%; --top: 78%}
+
+
+.display .ultrawide .mockup .wrapper {  background-image: url("../Images/ultrawide-responsive.png"); }
+.display .desktop .mockup .wrapper {  background-image: url("../Images/desktop-responsive.png"); }
+.display .desktop-xl .mockup .wrapper {  background-image: url("../Images/desktop-xl-responsive.png"); }
+.display .desktop-xxl .mockup .wrapper {  background-image: url("../Images/desktop-xxl-responsive.png"); }
+.display .laptop .mockup .wrapper {  background-image: url("../Images/laptop-responsive.png"); }
+.display .laptop-xl .mockup .wrapper {  background-image: url("../Images/laptop-xl-responsive.png"); }
+.display .laptop-xxl .mockup .wrapper {  background-image: url("../Images/laptop-xxl-responsive.png"); }
+.display .tablet .mockup .wrapper {  background-image: url("../Images/tablet-responsive.png"); }
+.display .tabletlandscape .mockup .wrapper {  background-image: url("../Images/tabletlandscape-responsive.png"); }
+.display .mobile .mockup .wrapper {  background-image: url("../Images/mobile-responsive.png"); }
+.display .iphone6 .mockup .wrapper {  background-image: url("../Images/iphone6-responsive.png"); }
+.display .iphone6landscape .mockup .wrapper {  background-image: url("../Images/iphone6landscape-responsive.png"); }

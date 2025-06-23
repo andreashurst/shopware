@@ -1,0 +1,15 @@
+@import url(all.css);
+@import url(all.scale.small.css);
+
+.ultrawide { --left: 62%; --top: 69% }
+.desktop { --left: 15%;  --top: 10% }
+.desktop-xl { --left: 15%;  --top: 40% }
+.desktop-xxl { --left: 15%; --top: 70% }
+.laptop { --left: 37%; --top: 12%}
+.laptop-xl { --left: 37%; --top: 42%}
+.laptop-xxl { --left: 37%; --top: 72%}
+.tablet { --left: 62%; --top: 12% }
+.tabletlandscape { --left: 62%; --top: 42% }
+.iphone11pro { --left: 84.5%; --top: 17%}
+.iphone6 { --left: 85%; --top: 45%}
+.iphone6landscape { --left: 85%; --top: 75%}

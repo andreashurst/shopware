@@ -1,0 +1,19 @@
+{
+	"version": "v12.4.23",
+	"name": "t3jet/t3jet_mockup",
+	"type": "typo3-cms-extension",
+	"description": "T3jet Mockup",
+	"homepage": "https://www.t3jet.site",
+	"license": ["GPL-2.0-or-later"],
+	"keywords": ["TYPO3 CMS"],
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "t3jet_mockup"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"T3jet\\T3jetMockup\\": "Classes/"
+		}
+	}
+}

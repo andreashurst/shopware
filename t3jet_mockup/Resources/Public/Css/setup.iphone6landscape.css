@@ -1,0 +1,14 @@
+.iphone6landscape {
+	--resolution: 736;
+	--default-scale: .5;
+}
+
+.iphone6landscape .wrapper {
+	--screen-width: 1472;
+	--screen-height: 826;
+	--image-width: 1872;
+	--image-height: 1228;
+	--border-radius: 0;
+	--default-top: 0;
+	background-image: url("../Images/iphone6landscape.png");
+}

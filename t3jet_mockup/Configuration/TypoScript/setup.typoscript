@@ -1,0 +1,94 @@
+###############################################
+### SETUP
+###############################################
+
+T3jetMockup = PAGE
+T3jetMockup {
+	config {
+		debug = 0
+		no_cache = 1
+	}
+	10 = FLUIDTEMPLATE
+	10 {
+		templateRootPath = EXT:t3jet_mockup/Resources/Private/Templates
+		layoutRootPath = EXT:t3jet_mockup/Resources/Private/Layouts
+		dataProcessing.10 = T3jet\T3jetMockup\DataProcessing\MockupProcessor
+		file = EXT:t3jet_mockup/Resources/Private/Templates/Default.html
+	}
+	shortcutIcon = EXT:t3jet_mockup/Resources/Public/Icons/favicon.ico
+	includeCSS.all = EXT:t3jet_mockup/Resources/Public/Css/all.css
+	meta.viewport = width=device-width, initial-scale=1
+}
+
+
+[traverse(request.getQueryParams(), 'mockup')]
+	T3jetMockup.typeNum = 0
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'trible']
+	T3jetMockup.includeCSS.mockupcss = EXT:t3jet_mockup/Resources/Public/Css/mockup.trible.css
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/MockupTrible.html
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'quad']
+	T3jetMockup.includeCSS.mockupcss = EXT:t3jet_mockup/Resources/Public/Css/mockup.quad.css
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/MockupQuad.html
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'five']
+	T3jetMockup.includeCSS.mockupcss = EXT:t3jet_mockup/Resources/Public/Css/mockup.five.css
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/MockupFive.html
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'six']
+	T3jetMockup.includeCSS.mockupcss = EXT:t3jet_mockup/Resources/Public/Css/mockup.six.css
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/MockupSix.html
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'twelve']
+	T3jetMockup.includeCSS.mockupcss = EXT:t3jet_mockup/Resources/Public/Css/mockup.twelve.css
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/MockupTwelve.html
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'responsive']
+	T3jetMockup.includeCSS.mockupcss = EXT:t3jet_mockup/Resources/Public/Css/mockup.responsive.css
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/MockupResponsive.html
+[end]
+
+
+[traverse(request.getQueryParams(), 'mockup') == 'all']
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/All.html
+	T3jetMockup.includeJSFooter.all = EXT:t3jet_mockup/Resources/Public/JavaScript/scroll.js
+	T3jetMockup.includeCSS.scroll = EXT:t3jet_mockup/Resources/Public/Css/scroll.css
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'desktops']
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/Desktop.html
+	T3jetMockup.includeJSFooter.all = EXT:t3jet_mockup/Resources/Public/JavaScript/scroll.js
+	T3jetMockup.includeCSS.scroll = EXT:t3jet_mockup/Resources/Public/Css/scroll.css
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'laptops']
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/Laptop.html
+	T3jetMockup.includeJSFooter.all = EXT:t3jet_mockup/Resources/Public/JavaScript/scroll.js
+	T3jetMockup.includeCSS.scroll = EXT:t3jet_mockup/Resources/Public/Css/scroll.css
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'tablets']
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/Tablet.html
+	T3jetMockup.includeJSFooter.all = EXT:t3jet_mockup/Resources/Public/JavaScript/scroll.js
+	T3jetMockup.includeCSS.scroll = EXT:t3jet_mockup/Resources/Public/Css/scroll.css
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'mobiles']
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/Mobile.html
+	T3jetMockup.includeJSFooter.all = EXT:t3jet_mockup/Resources/Public/JavaScript/scroll.js
+	T3jetMockup.includeCSS.scroll = EXT:t3jet_mockup/Resources/Public/Css/scroll.css
+[end]
+
+[traverse(request.getQueryParams(), 'mockup') == 'white']
+	T3jetMockup.10.file = EXT:t3jet_mockup/Resources/Private/Templates/White.html
+	T3jetMockup.includeJSFooter.all = EXT:t3jet_mockup/Resources/Public/JavaScript/scroll.js
+	T3jetMockup.includeCSS.scroll = EXT:t3jet_mockup/Resources/Public/Css/scroll.css
+	T3jetMockup.includeCSS.white = EXT:t3jet_mockup/Resources/Public/Css/white.css
+[end]

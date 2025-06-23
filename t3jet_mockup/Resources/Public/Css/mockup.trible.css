@@ -1,0 +1,6 @@
+@import url(all.css);
+@import url(all.scale.full.css);
+
+.desktop { --left: 55%;}
+.tablet { --left: 20%; --top: 60%; --default-scale: .6}
+.mobile { --left: 85%; --top: 70%; --default-scale: .3}

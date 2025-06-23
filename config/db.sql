@@ -4602,11 +4602,11 @@ INSERT INTO `increment` VALUES
 ('message_queue','message_queue_stats','Shopware\\Core\\Content\\Product\\Cleanup\\CleanupProductKeywordDictionaryTask',0,'2025-06-23 16:25:45.073','2025-06-23 16:25:46.065'),
 ('message_queue','message_queue_stats','Shopware\\Core\\Content\\Product\\Cleanup\\CleanupUnusedDownloadMediaTask',0,'2025-06-23 16:25:45.092','2025-06-23 16:25:46.095'),
 ('message_queue','message_queue_stats','Shopware\\Core\\Content\\Product\\DataAbstractionLayer\\ProductIndexingMessage',0,'2025-06-23 16:26:11.664','2025-06-23 16:26:28.247'),
-('message_queue','message_queue_stats','Shopware\\Core\\Content\\ProductExport\\ScheduledTask\\ProductExportGenerateTask',0,'2025-06-23 16:25:45.132','2025-06-23 16:32:25.982'),
+('message_queue','message_queue_stats','Shopware\\Core\\Content\\ProductExport\\ScheduledTask\\ProductExportGenerateTask',0,'2025-06-23 16:25:45.132','2025-06-23 16:42:35.303'),
 ('message_queue','message_queue_stats','Shopware\\Core\\Content\\ProductStream\\ScheduledTask\\UpdateProductStreamMappingTask',0,'2025-06-23 16:25:45.122','2025-06-23 16:25:46.119'),
 ('message_queue','message_queue_stats','Shopware\\Core\\Content\\Sitemap\\ScheduledTask\\SitemapGenerateTask',0,'2025-06-23 16:25:45.185','2025-06-23 16:25:46.213'),
 ('message_queue','message_queue_stats','Shopware\\Core\\Content\\Sitemap\\ScheduledTask\\SitemapMessage',0,'2025-06-23 16:25:46.208','2025-06-23 16:25:46.318'),
-('message_queue','message_queue_stats','Shopware\\Core\\Framework\\Adapter\\Cache\\InvalidateCacheTask',0,'2025-06-23 16:25:44.975','2025-06-23 16:30:25.525'),
+('message_queue','message_queue_stats','Shopware\\Core\\Framework\\Adapter\\Cache\\InvalidateCacheTask',0,'2025-06-23 16:25:44.975','2025-06-23 16:40:37.789'),
 ('message_queue','message_queue_stats','Shopware\\Core\\Framework\\App\\ScheduledTask\\DeleteCascadeAppsTask',0,'2025-06-23 16:25:44.989','2025-06-23 16:25:45.880'),
 ('message_queue','message_queue_stats','Shopware\\Core\\Framework\\App\\ScheduledTask\\UpdateAppsTask',0,'2025-06-23 16:25:44.982','2025-06-23 16:25:45.857'),
 ('message_queue','message_queue_stats','Shopware\\Core\\Framework\\DataAbstractionLayer\\Indexing\\MessageQueue\\IterateEntityIndexerMessage',0,'2025-06-23 16:25:18.943','2025-06-23 16:29:28.944'),
@@ -4620,10 +4620,10 @@ INSERT INTO `increment` VALUES
 ('message_queue','message_queue_stats','Shopware\\Core\\System\\UsageData\\ScheduledTask\\CollectEntityDataTask',0,'2025-06-23 16:25:45.058','2025-06-23 16:25:46.051'),
 ('message_queue','message_queue_stats','Shopware\\Storefront\\Theme\\ScheduledTask\\DeleteThemeFilesTask',0,'2025-06-23 16:25:45.293','2025-06-23 16:25:46.263'),
 ('message_queue','message_queue_stats','Swag\\PayPal\\Checkout\\Payment\\ScheduledTask\\TransactionStatusSyncTask',0,'2025-06-23 16:27:46.455','2025-06-23 16:27:46.583'),
-('message_queue','message_queue_stats','Swag\\PayPal\\Checkout\\PUI\\ScheduledTask\\PUIInstructionsFetchTask',0,'2025-06-23 16:27:46.466','2025-06-23 16:27:46.588'),
+('message_queue','message_queue_stats','Swag\\PayPal\\Checkout\\PUI\\ScheduledTask\\PUIInstructionsFetchTask',0,'2025-06-23 16:27:46.466','2025-06-23 16:38:27.495'),
 ('message_queue','message_queue_stats','Swag\\PayPal\\Pos\\Schedule\\CleanUpLogTask',0,'2025-06-23 16:27:46.479','2025-06-23 16:27:46.599'),
 ('message_queue','message_queue_stats','Swag\\PayPal\\Pos\\Schedule\\CompleteSyncTask',0,'2025-06-23 16:27:46.485','2025-06-23 16:27:46.603'),
-('message_queue','message_queue_stats','Swag\\PayPal\\Pos\\Schedule\\InventorySyncTask',0,'2025-06-23 16:27:46.493','2025-06-23 16:27:46.608'),
+('message_queue','message_queue_stats','Swag\\PayPal\\Pos\\Schedule\\InventorySyncTask',0,'2025-06-23 16:27:46.493','2025-06-23 16:38:27.511'),
 ('message_queue','message_queue_stats','Swag\\PayPal\\Reporting\\ScheduledTask\\TurnoverReportingTask',0,'2025-06-23 16:27:46.472','2025-06-23 16:27:46.594'),
 ('user_activity','01979d9bbc967352b35b8f98594f4d96','first-run-wizard@sw.first.run.wizard.index',7,'2025-06-23 16:25:59.804','2025-06-23 16:28:50.825');
 /*!40000 ALTER TABLE `increment` ENABLE KEYS */;
@@ -6721,7 +6721,7 @@ CREATE TABLE `messenger_messages` (
   KEY `queue_name` (`queue_name`),
   KEY `available_at` (`available_at`),
   KEY `delivered_at` (`delivered_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -10881,7 +10881,7 @@ CREATE TABLE `refresh_token` (
 LOCK TABLES `refresh_token` WRITE;
 /*!40000 ALTER TABLE `refresh_token` DISABLE KEYS */;
 INSERT INTO `refresh_token` VALUES
-('óù¢¨r4ùsQQÊK','óùõºñsR≥[èòYOMñ','14e29b10dd0a94d10a222058b9b72106fe3a61bb14ed7f0606c7e7ac394e81bbb653e3f056993097','2025-06-23 16:32:10.412','2025-06-30 16:32:10.412');
+('óù´?€sgπ“Ëã¿⁄ü','óùõºñsR≥[èòYOMñ','b3d5b3e20cd5c85464fafde493acbc665f1cb18c05a894fc89454d5f1d6988bd00319fbdfeba786f','2025-06-23 16:42:15.387','2025-06-30 16:42:15.387');
 /*!40000 ALTER TABLE `refresh_token` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11843,7 +11843,7 @@ LOCK TABLES `scheduled_task` WRITE;
 /*!40000 ALTER TABLE `scheduled_task` DISABLE KEYS */;
 INSERT INTO `scheduled_task` VALUES
 ('óùõπèr‰çﬁ≠$¥Ωvæ','log_entry.cleanup','Shopware\\Core\\Framework\\Log\\ScheduledTask\\LogCleanupTask',86400,'scheduled','2025-06-23 16:25:45.076','2025-06-24 16:25:17.969','2025-06-23 16:25:17.971','2025-06-23 16:25:45.078',86400),
-('óùõπ¬p¥§a\"Q‡','shopware.invalidate_cache','Shopware\\Core\\Framework\\Adapter\\Cache\\InvalidateCacheTask',300,'scheduled','2025-06-23 16:30:25.519','2025-06-23 16:35:18.019','2025-06-23 16:25:18.019','2025-06-23 16:30:25.520',300),
+('óùõπ¬p¥§a\"Q‡','shopware.invalidate_cache','Shopware\\Core\\Framework\\Adapter\\Cache\\InvalidateCacheTask',300,'scheduled','2025-06-23 16:40:37.786','2025-06-23 16:45:18.019','2025-06-23 16:25:18.019','2025-06-23 16:40:37.786',300),
 ('óùõπ«r∆ê¢\n°;•¶|','app_update','Shopware\\Core\\Framework\\App\\ScheduledTask\\UpdateAppsTask',86400,'scheduled','2025-06-23 16:25:45.853','2025-06-24 16:25:18.023','2025-06-23 16:25:18.023','2025-06-23 16:25:45.853',86400),
 ('óùõπ sª¶çA—¿Y≥1','app_delete','Shopware\\Core\\Framework\\App\\ScheduledTask\\DeleteCascadeAppsTask',86400,'scheduled','2025-06-23 16:25:45.873','2025-06-24 16:25:18.026','2025-06-23 16:25:18.027','2025-06-23 16:25:45.874',86400),
 ('óùõπŒrÕö`°Ó§ÃF','version.cleanup','Shopware\\Core\\Framework\\DataAbstractionLayer\\Version\\Cleanup\\CleanupVersionTask',86400,'scheduled','2025-06-23 16:25:45.897','2025-06-24 16:25:18.030','2025-06-23 16:25:18.030','2025-06-23 16:25:45.898',86400),
@@ -11855,20 +11855,20 @@ INSERT INTO `scheduled_task` VALUES
 ('óùõπ„ríé2È(çväU','product_download.media.cleanup','Shopware\\Core\\Content\\Product\\Cleanup\\CleanupUnusedDownloadMediaTask',2628000,'scheduled','2025-06-23 16:25:46.092','2025-07-24 02:25:18.051','2025-06-23 16:25:18.052','2025-06-23 16:25:46.092',2628000),
 ('óùõπÁrQê‚àd3tÀˆ','delete_newsletter_recipient_task','Shopware\\Core\\Content\\Newsletter\\ScheduledTask\\NewsletterRecipientTask',86400,'scheduled','2025-06-23 16:25:46.103','2025-06-24 16:25:18.055','2025-06-23 16:25:18.055','2025-06-23 16:25:46.104',86400),
 ('óùõπÍp.ìÜAzíßm','product_stream.mapping.update','Shopware\\Core\\Content\\ProductStream\\ScheduledTask\\UpdateProductStreamMappingTask',86400,'scheduled','2025-06-23 16:25:46.116','2025-06-24 16:25:18.058','2025-06-23 16:25:18.058','2025-06-23 16:25:46.116',86400),
-('óùõπÌp√é_Ω<:∑≈','product_export_generate_task','Shopware\\Core\\Content\\ProductExport\\ScheduledTask\\ProductExportGenerateTask',60,'scheduled','2025-06-23 16:32:25.978','2025-06-23 16:33:18.061','2025-06-23 16:25:18.061','2025-06-23 16:32:25.979',60),
+('óùõπÌp√é_Ω<:∑≈','product_export_generate_task','Shopware\\Core\\Content\\ProductExport\\ScheduledTask\\ProductExportGenerateTask',60,'scheduled','2025-06-23 16:42:35.299','2025-06-23 16:42:35.299','2025-06-23 16:25:18.061','2025-06-23 16:42:35.300',60),
 ('óùõπs¥ºMh–\0V>','import_export_file.cleanup','Shopware\\Core\\Content\\ImportExport\\ScheduledTask\\CleanupImportExportFileTask',86400,'scheduled','2025-06-23 16:25:46.189','2025-06-24 16:25:18.065','2025-06-23 16:25:18.065','2025-06-23 16:25:46.189',86400),
 ('óùõπÙrRá»vt#r6√','shopware.sitemap_generate','Shopware\\Core\\Content\\Sitemap\\ScheduledTask\\SitemapGenerateTask',86400,'scheduled','2025-06-23 16:25:46.209','2025-06-24 16:25:18.068','2025-06-23 16:25:18.068','2025-06-23 16:25:46.210',86400),
 ('óùõπ˜q›π9g êA≈¯','cart.cleanup','Shopware\\Core\\Checkout\\Cart\\Cleanup\\CleanupCartTask',86400,'scheduled','2025-06-23 16:25:46.222','2025-06-24 16:25:18.071','2025-06-23 16:25:18.072','2025-06-23 16:25:46.222',86400),
 ('óùõπ˙p‰°qQ‡jF','customer.delete_unused_guests','Shopware\\Core\\Checkout\\Customer\\DeleteUnusedGuestCustomerTask',86400,'scheduled','2025-06-23 16:25:46.235','2025-06-24 16:25:18.075','2025-06-23 16:25:18.075','2025-06-23 16:25:46.235',86400),
 ('óùõπ˛qËá,ùÉÏ!4','services.install','Shopware\\Core\\Service\\ScheduledTask\\InstallServicesTask',86400,'scheduled','2025-06-23 16:25:46.245','2025-06-24 16:25:18.078','2025-06-23 16:25:18.078','2025-06-23 16:25:46.246',86400),
-('óùõ∫q¸¶Ú{3ˆ÷ßÉ','shopware.elasticsearch.create.alias','Shopware\\Elasticsearch\\Framework\\Indexing\\CreateAliasTask',300,'skipped',NULL,'2025-06-23 16:35:18.082','2025-06-23 16:25:18.082','2025-06-23 16:30:24.318',300),
+('óùõ∫q¸¶Ú{3ˆ÷ßÉ','shopware.elasticsearch.create.alias','Shopware\\Elasticsearch\\Framework\\Indexing\\CreateAliasTask',300,'skipped',NULL,'2025-06-23 16:45:18.082','2025-06-23 16:25:18.082','2025-06-23 16:40:24.488',300),
 ('óùõ∫srã?¨t∂_eµ','theme.delete_files','Shopware\\Storefront\\Theme\\ScheduledTask\\DeleteThemeFilesTask',86400,'scheduled','2025-06-23 16:25:46.259','2025-06-24 16:25:18.085','2025-06-23 16:25:18.085','2025-06-23 16:25:46.260',86400),
 ('óùùÈhpuòˇõl2]p','swag_paypal.transaction_status_sync','Swag\\PayPal\\Checkout\\Payment\\ScheduledTask\\TransactionStatusSyncTask',3600,'scheduled',NULL,'2025-06-23 17:27:41.289','2025-06-23 16:27:41.290','2025-06-23 16:29:28.889',3600),
-('óùùÈmp¶ø¡ÄWôeù','swag_paypal.pui_information_fetch','Swag\\PayPal\\Checkout\\PUI\\ScheduledTask\\PUIInstructionsFetchTask',300,'scheduled',NULL,'2025-06-23 16:32:41.293','2025-06-23 16:27:41.294','2025-06-23 16:29:28.889',300),
+('óùùÈmp¶ø¡ÄWôeù','swag_paypal.pui_information_fetch','Swag\\PayPal\\Checkout\\PUI\\ScheduledTask\\PUIInstructionsFetchTask',300,'scheduled','2025-06-23 16:38:27.491','2025-06-23 16:42:41.293','2025-06-23 16:27:41.294','2025-06-23 16:38:27.492',300),
 ('óùùÈrrj¶YÊ87óG','swag_paypal.turnover_reporting','Swag\\PayPal\\Reporting\\ScheduledTask\\TurnoverReportingTask',86400,'scheduled',NULL,'2025-06-24 16:27:41.298','2025-06-23 16:27:41.298','2025-06-23 16:29:28.889',86400),
 ('óùùÈvsÏΩ◊/\"#‹','swag_paypal.pos_clean_up_log','Swag\\PayPal\\Pos\\Schedule\\CleanUpLogTask',2592000,'scheduled',NULL,'2025-07-23 16:27:41.302','2025-06-23 16:27:41.302','2025-06-23 16:29:28.889',2592000),
 ('óùùÈzsªè3À«≥','swag_paypal.pos_complete_sync','Swag\\PayPal\\Pos\\Schedule\\CompleteSyncTask',3600,'scheduled',NULL,'2025-06-23 17:27:41.307','2025-06-23 16:27:41.307','2025-06-23 16:29:28.889',3600),
-('óùùÈÄsrñ·Àîﬂ‘','swag_paypal.pos_inventory_sync','Swag\\PayPal\\Pos\\Schedule\\InventorySyncTask',300,'scheduled',NULL,'2025-06-23 16:32:41.313','2025-06-23 16:27:41.313','2025-06-23 16:29:28.889',300);
+('óùùÈÄsrñ·Àîﬂ‘','swag_paypal.pos_inventory_sync','Swag\\PayPal\\Pos\\Schedule\\InventorySyncTask',300,'scheduled','2025-06-23 16:38:27.507','2025-06-23 16:42:41.313','2025-06-23 16:27:41.313','2025-06-23 16:38:27.508',300);
 /*!40000 ALTER TABLE `scheduled_task` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -14037,6 +14037,8 @@ CREATE TABLE `user_config` (
 
 LOCK TABLES `user_config` WRITE;
 /*!40000 ALTER TABLE `user_config` DISABLE KEYS */;
+INSERT INTO `user_config` VALUES
+('óù£q‰r5©¨¬€9Iı','óùõºñsR≥[èòYOMñ','core.frw.userToken','{\"frwUserToken\":\"78f588e10e8a21f1fc16c4eda95e7cf8\"}','2025-06-23 16:33:43.909',NULL);
 /*!40000 ALTER TABLE `user_config` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -14248,4 +14250,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-06-23 18:33:07
+-- Dump completed on 2025-06-23 19:09:21

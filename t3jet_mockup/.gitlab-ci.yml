@@ -1,0 +1,4 @@
+include:
+  - project: 't3jet/pipelines'
+    ref: 'autotag'
+    file: '.gitlab-ci/config.yml'

@@ -1,0 +1,22 @@
+.desktop {
+	--resolution: 1600;
+	--default-scale: .5;
+}
+
+.desktop .wrapper {
+	--screen-width: 1920;
+	--screen-height: 1200;
+	--image-width: 2320;
+	--image-height: 2200;
+	--border-radius: 0;
+	--default-top: 100;
+	background-image: url("../Images/desktop.png");
+}
+
+.desktop-xl {
+	--resolution: 2560;
+}
+
+.desktop-xxl {
+	--resolution: 3840;
+}

@@ -1,0 +1,109 @@
+@import url(setup.ultrawide.css);
+@import url(setup.desktop.css);
+@import url(setup.laptop.css);
+@import url(setup.tabletlandscape.css);
+@import url(setup.tablet.css);
+@import url(setup.mobile.css);
+@import url(setup.iphone6.css);
+@import url(setup.iphone6landscape.css);
+@import url(all.scale.full.css);
+
+body,
+section {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+	padding: 0px;
+	margin: 0px;
+}
+
+.display {
+	--top: 50%;
+	--left: 50%;
+}
+
+
+.display>div{
+	position: absolute;
+	left: var(--left);
+	top: var(--top);
+	max-width: 1px;
+	max-height: 1px;
+}
+
+.display .mockup {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.display .mockup .wrapper {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+	position: absolute;
+	height: calc((var(--image-height) * 1px) * var(--default-scale) * var(--scale));
+	width: calc((var(--image-width) * 1px) * var(--default-scale) * var(--scale));
+	z-index: 2;
+	top: calc(var(--default-top) * 1px);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.display .mockup iframe {
+	--scale-calculated: calc(var(--screen-width) / var(--resolution) * var(--default-scale) * var(--scale));
+	-webkit-transform: scale(var(--scale-calculated));
+	-ms-transform: scale(var(--scale-calculated));
+	transform: scale(var(--scale-calculated));
+	-webkit-transform: scale(var(--scale-calculated));
+	-o-transform: scale(var(--scale-calculated));
+	-ms-transform: scale(var(--scale-calculated));
+	-moz-transform: scale(var(--scale-calculated));
+	left: calc(200px * var(--default-scale) * var(--scale));
+	top: calc(200px * var(--default-scale) * var(--scale));
+	width: calc(var(--resolution) * 1px);
+	height:calc(var(--resolution) / var(--screen-width) *  var(--screen-height) * 1px);
+	border-radius: calc(var(--border-radius) * 1px);
+	border: 1px solid blue;
+}
+
+.display .mockup iframe {
+	position: relative;
+	overflow-y: hidden;
+	background-color: #fff;
+	border: 0px solid black;
+	-webkit-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-moz-transform-origin: top left;
+	margin: 0;
+	padding: 0;
+	z-index: 3;
+}
+
+
+
+section {
+  background-image: url("../Images/background-white.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-top: 2px solid #FFF;
+}
+
+
+
+.display .ultrawide .mockup .wrapper {  background-image: url("../Images/ultrawide-white.png"); }
+.display .desktop .mockup .wrapper {  background-image: url("../Images/desktop-white.png"); }
+.display .desktop-xl .mockup .wrapper {  background-image: url("../Images/desktop-xl-white.png"); }
+.display .desktop-xxl .mockup .wrapper {  background-image: url("../Images/desktop-xxl-white.png"); }
+.display .laptop .mockup .wrapper {  background-image: url("../Images/laptop-white.png"); }
+.display .laptop-xl .mockup .wrapper {  background-image: url("../Images/laptop-xl-white.png"); }
+.display .laptop-xxl .mockup .wrapper {  background-image: url("../Images/laptop-xxl-white.png"); }
+.display .tablet .mockup .wrapper {  background-image: url("../Images/tablet-white.png"); }
+.display .tabletlandscape .mockup .wrapper {  background-image: url("../Images/tabletlandscape-white.png"); }
+.display .mobile .mockup .wrapper {  background-image: url("../Images/mobile-white.png"); }
+.display .iphone6 .mockup .wrapper {  background-image: url("../Images/iphone6-white.png"); }
+.display .iphone6landscape .mockup .wrapper {  background-image: url("../Images/iphone6landscape-white.png"); }

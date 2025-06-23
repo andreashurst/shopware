@@ -1,0 +1,7 @@
+:root {
+	--scale: .1;
+}
+
+@media (min-width: 1920px) {
+	body { --scale: .3; }
+}
