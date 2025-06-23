@@ -1,0 +1,14 @@
+.iphone6plus {
+	--resolution: 414;
+	--default-scale: .5;
+}
+
+.iphone6plus .wrapper {
+	--screen-width: 828;
+	--screen-height: 1472;
+	--image-width: 1228;
+	--image-height: 1872;
+	--border-radius: 0;
+	--default-top: 0;
+	background-image: url("../Images/iphone6plus.png");
+}

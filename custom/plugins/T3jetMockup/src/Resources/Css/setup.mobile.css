@@ -1,0 +1,15 @@
+
+.mobile {
+	--resolution: 390;
+	--default-scale: .6;
+}
+
+.mobile .wrapper {
+	--screen-width: 780;
+	--screen-height: 1768;
+	--image-width: 1090;
+	--image-height: 2024;
+	--border-radius: 54;
+	--default-top: 0;
+	background-image: url("../Images/iphone12.png");
+}

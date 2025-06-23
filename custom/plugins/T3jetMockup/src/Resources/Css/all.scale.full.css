@@ -1,0 +1,33 @@
+:root {
+	--scale: .1;
+}
+
+@media (min-width: 1px) and (max-width: 389px) {
+	body { --scale: .1; }
+}
+
+@media (min-width: 390px) and (max-width: 767px) {
+	body { --scale: .3; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	body { --scale: .4; }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+	body { --scale: .5; }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+	body { --scale: .6; }
+}
+
+@media (min-width: 1440px) and (max-width: 1679px) {
+	body { --scale: .7; }
+}
+@media (min-width: 1680px) and (max-width: 1919px) {
+	body { --scale: .9; }
+}
+@media (min-width: 1920px) {
+	body { --scale: 1; }
+}

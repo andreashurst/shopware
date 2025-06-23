@@ -1,0 +1,14 @@
+.iphone12max {
+	--resolution: 428;
+	--default-scale: .4;
+}
+
+.iphone12max .wrapper {
+	--screen-width: 856;
+	--screen-height: 1852;
+	--image-width: 1180;
+	--image-height: 2124;
+	--border-radius: 54;
+	--default-top: 0;
+	background-image: url("../Images/iphone12max.png");
+}

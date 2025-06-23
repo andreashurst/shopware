@@ -1,0 +1,22 @@
+.laptop {
+	--resolution: 1280;
+	--default-scale: .8;
+}
+
+.laptop .wrapper {
+	--screen-width: 1280;
+	--screen-height: 800;
+	--image-width: 1680;
+	--image-height: 1200;
+	--border-radius: 10;
+	--default-top: 40;
+	background-image: url("../Images/laptop.png");
+}
+
+.laptop-xl {
+	--resolution: 1440;
+}
+
+.laptop-xxl {
+	--resolution: 1920;
+}

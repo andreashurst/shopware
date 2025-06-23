@@ -1,0 +1,14 @@
+.ultrawide {
+	--resolution: 3440;
+	--default-scale: .40;
+}
+
+.ultrawide .wrapper {
+	--screen-width: 3440;
+	--screen-height: 1440;
+	--image-width: 3840;
+	--image-height: 2300;
+	--border-radius: 0;
+	--default-top: 100;
+	background-image: url("../Images/ultrawide.png");
+}

@@ -1,0 +1,28 @@
+{
+    "name": "t3jet/mockup-plugin",
+    "description": "T3jet Mockup Plugin - Device mockups for Shopware",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "T3jet Team",
+            "homepage": "https://www.t3jet.site"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "T3jet\\MockupPlugin\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "T3jet\\MockupPlugin\\T3jetMockup",
+        "label": {
+            "de-DE": "T3jet Mockup Plugin",
+            "en-GB": "T3jet Mockup Plugin"
+        }
+    }
+}

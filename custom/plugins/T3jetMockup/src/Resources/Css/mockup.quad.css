@@ -1,0 +1,7 @@
+@import url(all.css);
+@import url(all.scale.full.css);
+
+.desktop { --left: 50%;}
+.tabletlandscape { --left: 20%; --top: 65%;  --default-scale: .5}
+.tablet { --left: 75%; --top: 65%;  --default-scale: .5}
+.mobile { --left: 87%; --default-scale: .25}

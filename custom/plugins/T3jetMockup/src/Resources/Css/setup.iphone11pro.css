@@ -1,0 +1,14 @@
+.iphone11pro {
+	--resolution: 375;
+	--default-scale: .55;
+}
+
+.iphone11pro .wrapper {
+	--screen-width: 750;
+	--screen-height: 1424;
+	--image-width: 1050;
+	--image-height: 2024;
+	--border-radius: 0;
+	--default-top: 0;
+	background-image: url("../Images/iphone11pro.png");
+}

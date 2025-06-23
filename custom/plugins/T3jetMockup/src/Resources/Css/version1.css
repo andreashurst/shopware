@@ -1,0 +1,9 @@
+@import url(all.css);
+@import url(all.scale.normal.css);
+
+.ultrawide .mockup {left: 25%; top: 25%}
+.desktop .mockup {left: 50%;}
+.laptop .mockup {left: 25%; top: 65%}
+.landscape .mockup {left: 75%; top: 25%}
+.tablet .mockup {left: 70%; top: 65%}
+.mobile .mockup {left: 90%;}

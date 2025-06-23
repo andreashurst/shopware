@@ -1,0 +1,14 @@
+.iphone6 {
+	--resolution: 375;
+	--default-scale: .5;
+}
+
+.iphone6 .wrapper {
+	--screen-width: 750;
+	--screen-height: 1334;
+	--image-width: 1148;
+	--image-height: 1872;
+	--border-radius: 0;
+	--default-top: 0;
+	background-image: url("../Images/iphone6.png");
+}

@@ -1,0 +1,8 @@
+@import url(all.css);
+@import url(all.scale.normal.css);
+
+.ultrawide { --left: 35%; --top: 25%}
+.laptop { --left: 35%; --top: 65%}
+.tabletlandscape { --left: 80%; --top: 25%}
+.tablet { --left: 80%; --top: 65%}
+.mobile { --left: 65%; }
