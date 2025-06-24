@@ -1,8 +1,8 @@
 [
   {
-    "content": "Fix CSS assets not being served correctly",
-    "status": "completed",
-    "priority": "high",
+    "content": "Add modern devices and popular current devices",
+    "status": "in_progress",
+    "priority": "medium",
     "id": "1"
   }
 ]

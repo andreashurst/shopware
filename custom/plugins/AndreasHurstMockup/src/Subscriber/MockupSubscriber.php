@@ -69,12 +69,29 @@ class MockupSubscriber implements EventSubscriberInterface
     private function getTemplateForMockupType(string $mockupType): string
     {
         $templates = [
+            // Multi-device layouts
             'trible' => '@AndreasHurstMockup/storefront/page/mockup/trible.html.twig',
             'quad' => '@AndreasHurstMockup/storefront/page/mockup/quad.html.twig',
             'five' => '@AndreasHurstMockup/storefront/page/mockup/five.html.twig',
             'six' => '@AndreasHurstMockup/storefront/page/mockup/six.html.twig',
             'twelve' => '@AndreasHurstMockup/storefront/page/mockup/twelve.html.twig',
-            'responsive' => '@AndreasHurstMockup/storefront/page/mockup/responsive.html.twig'
+            'responsive' => '@AndreasHurstMockup/storefront/page/mockup/responsive.html.twig',
+            
+            // Single device layouts
+            'desktop' => '@AndreasHurstMockup/storefront/page/device/desktop.html.twig',
+            'laptop' => '@AndreasHurstMockup/storefront/page/device/laptop.html.twig',
+            'tablet' => '@AndreasHurstMockup/storefront/page/device/tablet.html.twig',
+            'tabletlandscape' => '@AndreasHurstMockup/storefront/page/device/tabletlandscape.html.twig',
+            'mobile' => '@AndreasHurstMockup/storefront/page/device/mobile.html.twig',
+            'iphone4' => '@AndreasHurstMockup/storefront/page/device/iphone4.html.twig',
+            'iphone5' => '@AndreasHurstMockup/storefront/page/device/iphone5.html.twig',
+            'iphone6' => '@AndreasHurstMockup/storefront/page/device/iphone6.html.twig',
+            'iphone6landscape' => '@AndreasHurstMockup/storefront/page/device/iphone6landscape.html.twig',
+            'iphone6plus' => '@AndreasHurstMockup/storefront/page/device/iphone6plus.html.twig',
+            'iphone11pro' => '@AndreasHurstMockup/storefront/page/device/iphone11pro.html.twig',
+            'iphone12' => '@AndreasHurstMockup/storefront/page/device/iphone12.html.twig',
+            'iphone12max' => '@AndreasHurstMockup/storefront/page/device/iphone12max.html.twig',
+            'ultrawide' => '@AndreasHurstMockup/storefront/page/device/ultrawide.html.twig'
         ];
         
         return $templates[$mockupType] ?? $templates['responsive'];

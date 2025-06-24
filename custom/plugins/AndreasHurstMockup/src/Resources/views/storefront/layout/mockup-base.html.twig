@@ -10,6 +10,10 @@
 </head>
 <body>
     {% block content %}{% endblock %}
+    
+    <!-- Hide cookie banners for cleaner mockup presentation -->
+    <script src="{{ asset('bundles/andreashurstmockup/JavaScript/hide-cookies.js', 'asset') }}"></script>
+    
     {% block javascript %}{% endblock %}
 </body>
 </html>

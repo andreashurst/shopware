@@ -12,6 +12,18 @@
       "allowedTools": [],
       "history": [
         {
+          "display": "Super du hast nun alles gelernt, kannst du auf dieser Basis alle gängigen aktuellen devices noch hinzufügen?",
+          "pastedContents": {}
+        },
+        {
+          "display": "Super, kannst du es noch erweitern so das alle setup.{device}.css per mockup={device} aufgerufen werden können?",
+          "pastedContents": {}
+        },
+        {
+          "display": "Kannst du noch ein Javascript einfügen, welches die standart cookie consent banner ausblendet?",
+          "pastedContents": {}
+        },
+        {
           "display": "Momentan wird die Datei \"https://shopware.ddev.site/bundles/andreashurstmockup/Css/mockup.quad.css\" noch nicht gefundne kannst du dies noch korrigieren?",
           "pastedContents": {}
         },
