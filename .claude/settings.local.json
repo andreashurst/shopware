@@ -4,7 +4,8 @@
       "Bash(curl:*)",
       "Bash(grep:*)",
       "Bash(bin/console:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }

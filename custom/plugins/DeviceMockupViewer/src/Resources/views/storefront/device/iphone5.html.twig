@@ -4,18 +4,63 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('bundles/devicemockupviewer/css/devices/iphone.css') }}">
+    <style>
+        .iphone5-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;
+        }
+        
+        .iphone5-mockup {
+            width: 320px;
+            height: 568px;
+            background-image: url('{{ asset('bundles/devicemockupviewer/Images/iphone5.png') }}');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .iphone5-screen {
+            width: 270px;
+            height: 480px;
+            overflow: hidden;
+            border-radius: 0;
+            position: relative;
+            margin-top: -15px;
+        }
+        
+        .iphone5-screen iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        @media (max-width: 480px) {
+            .iphone5-mockup {
+                transform: scale(0.8);
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .iphone5-mockup {
+                transform: scale(0.7);
+            }
+        }
+    </style>
 {% endblock %}
 
 {% block content %}
-<div class="device-container">
-    <div class="iphone-5 device-base scale-480 scale-360">
-        <div class="speaker"></div>
-        <div class="front-camera"></div>
-        <div class="screen screen-base iphone-screen">
+<div class="iphone5-container">
+    <div class="iphone5-mockup">
+        <div class="iphone5-screen">
             <iframe src="{{ cleanUrl }}" title="iPhone 5 Mockup"></iframe>
         </div>
-        <div class="home-button"></div>
     </div>
 </div>
 {% endblock %}

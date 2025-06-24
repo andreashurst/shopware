@@ -1,11 +1,11 @@
 {% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
 
-{% block title %}iPhone 6 Mockup{% endblock %}
+{% block title %}Tablet Mockup{% endblock %}
 
 {% block stylesheets %}
     {{ parent() }}
     <style>
-        .iphone6-container {
+        .tablet-container {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -13,10 +13,10 @@
             width: 100%;
         }
         
-        .iphone6-mockup {
-            width: 375px;
-            height: 667px;
-            background-image: url('{{ asset('bundles/devicemockupviewer/Images/iphone6.png') }}');
+        .tablet-mockup {
+            width: 768px;
+            height: 1024px;
+            background-image: url('{{ asset('bundles/devicemockupviewer/Images/tablet.png') }}');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -26,40 +26,47 @@
             justify-content: center;
         }
         
-        .iphone6-screen {
-            width: 320px;
-            height: 568px;
+        .tablet-screen {
+            width: 640px;
+            height: 860px;
             overflow: hidden;
-            border-radius: 0;
+            border-radius: 12px;
             position: relative;
             margin-top: -10px;
         }
         
-        .iphone6-screen iframe {
+        .tablet-screen iframe {
             width: 100%;
             height: 100%;
             border: none;
+            border-radius: 12px;
         }
         
-        @media (max-width: 480px) {
-            .iphone6-mockup {
+        @media (max-width: 900px) {
+            .tablet-mockup {
                 transform: scale(0.7);
             }
         }
         
-        @media (max-width: 360px) {
-            .iphone6-mockup {
-                transform: scale(0.6);
+        @media (max-width: 600px) {
+            .tablet-mockup {
+                transform: scale(0.5);
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .tablet-mockup {
+                transform: scale(0.4);
             }
         }
     </style>
 {% endblock %}
 
 {% block content %}
-<div class="iphone6-container">
-    <div class="iphone6-mockup">
-        <div class="iphone6-screen">
-            <iframe src="{{ cleanUrl }}" title="iPhone 6 Mockup"></iframe>
+<div class="tablet-container">
+    <div class="tablet-mockup">
+        <div class="tablet-screen">
+            <iframe src="{{ cleanUrl }}" title="Tablet Mockup"></iframe>
         </div>
     </div>
 </div>

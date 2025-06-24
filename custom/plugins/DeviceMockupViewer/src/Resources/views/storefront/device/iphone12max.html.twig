@@ -4,15 +4,62 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('bundles/devicemockupviewer/css/devices/iphone.css') }}">
+    <style>
+        .iphone12max-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;
+        }
+        
+        .iphone12max-mockup {
+            width: 428px;
+            height: 926px;
+            background-image: url('{{ asset('bundles/devicemockupviewer/Images/iphone12max.png') }}');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .iphone12max-screen {
+            width: 380px;
+            height: 820px;
+            overflow: hidden;
+            border-radius: 25px;
+            position: relative;
+            margin-top: -5px;
+        }
+        
+        .iphone12max-screen iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 25px;
+        }
+        
+        @media (max-width: 500px) {
+            .iphone12max-mockup {
+                transform: scale(0.5);
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .iphone12max-mockup {
+                transform: scale(0.4);
+            }
+        }
+    </style>
 {% endblock %}
 
 {% block content %}
-<div class="device-container">
-    <div class="iphone-12-max device-base button-left button-right scale-480 scale-360">
-        <div class="power-button button-side button-right" style="top: 180px; height: 70px;"></div>
-        <div class="screen screen-base iphone-screen">
-            <div class="notch"></div>
+<div class="iphone12max-container">
+    <div class="iphone12max-mockup">
+        <div class="iphone12max-screen">
             <iframe src="{{ cleanUrl }}" title="iPhone 12 Pro Max Mockup"></iframe>
         </div>
     </div>

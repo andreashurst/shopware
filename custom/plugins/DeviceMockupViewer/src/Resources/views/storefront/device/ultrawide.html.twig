@@ -1,11 +1,11 @@
 {% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
 
-{% block title %}MacBook Pro 16" Mockup{% endblock %}
+{% block title %}Ultrawide Mockup{% endblock %}
 
 {% block stylesheets %}
     {{ parent() }}
     <style>
-        .macbook-container {
+        .ultrawide-container {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -13,61 +13,66 @@
             width: 100%;
         }
         
-        .macbook-pro-16 {
-            width: 800px;
-            height: 550px;
-            background-image: url('{{ asset('bundles/devicemockupviewer/Images/laptop.png') }}');
+        .ultrawide-mockup {
+            width: 1200px;
+            height: 600px;
+            background-image: url('{{ asset('bundles/devicemockupviewer/Images/ultrawide.png') }}');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
             position: relative;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
-            padding-top: 45px;
         }
         
-        .macbook-screen {
-            width: 580px;
-            height: 360px;
+        .ultrawide-screen {
+            width: 1000px;
+            height: 420px;
             overflow: hidden;
             border-radius: 8px;
             position: relative;
-            margin-top: 0;
+            margin-top: -40px;
         }
         
-        .macbook-screen iframe {
+        .ultrawide-screen iframe {
             width: 100%;
             height: 100%;
             border: none;
             border-radius: 8px;
         }
         
-        @media (max-width: 1000px) {
-            .macbook-pro-16 {
+        @media (max-width: 1300px) {
+            .ultrawide-mockup {
                 transform: scale(0.8);
             }
         }
         
-        @media (max-width: 800px) {
-            .macbook-pro-16 {
+        @media (max-width: 1000px) {
+            .ultrawide-mockup {
                 transform: scale(0.6);
             }
         }
         
-        @media (max-width: 600px) {
-            .macbook-pro-16 {
+        @media (max-width: 800px) {
+            .ultrawide-mockup {
                 transform: scale(0.4);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .ultrawide-mockup {
+                transform: scale(0.3);
             }
         }
     </style>
 {% endblock %}
 
 {% block content %}
-<div class="macbook-container">
-    <div class="macbook-pro-16">
-        <div class="macbook-screen">
-            <iframe src="{{ cleanUrl }}" title="MacBook Pro 16 Mockup"></iframe>
+<div class="ultrawide-container">
+    <div class="ultrawide-mockup">
+        <div class="ultrawide-screen">
+            <iframe src="{{ cleanUrl }}" title="Ultrawide Mockup"></iframe>
         </div>
     </div>
 </div>

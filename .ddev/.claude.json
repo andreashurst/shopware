@@ -4,13 +4,33 @@
     "new-user-warmup": 1,
     "memory-command": 6
   },
-  "promptQueueUseCount": 3,
+  "promptQueueUseCount": 4,
   "firstStartTime": "2025-06-08T12:58:52.110Z",
   "userID": "87dcd4f6b4842d8b6e4286c7206d960aa7fa23546174e33b0ac23a873c33cb45",
   "projects": {
     "/var/www/html": {
       "allowedTools": [],
       "history": [
+        {
+          "display": "super danke!",
+          "pastedContents": {}
+        },
+        {
+          "display": "da geht es: https://shopware.ddev.site/?mockup=laptop da geht es nicht:https://shopware.ddev.site/?mockup=macbookpro16",
+          "pastedContents": {}
+        },
+        {
+          "display": "hier geht es noch nicht...",
+          "pastedContents": {}
+        },
+        {
+          "display": "super, aber laptop.png hast du vergessen.",
+          "pastedContents": {}
+        },
+        {
+          "display": "Kannst du doch bitte die BIlder unter \"custom/plugins/AndreasHurstMockup/src/Resources/public/Images\" nutzen?",
+          "pastedContents": {}
+        },
         {
           "display": "bei \"trible\" zum Beispiel wird leider das iframe nicht skaliert.",
           "pastedContents": {}

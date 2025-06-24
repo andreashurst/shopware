@@ -1,0 +1,68 @@
+[
+  {
+    "content": "Update iPhone 4 template to use real device image as background",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update iPhone 5 template to use real device image as background",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create iPhone 6 Plus template using real device image",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update iPhone 11 Pro template to use real device image as background",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Update iPhone 12 template to use real device image as background",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Update iPhone 12 Max template to use real device image as background",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Update Laptop template to use real device image as background",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  },
+  {
+    "content": "Create Ultrawide template using real device image",
+    "status": "completed",
+    "priority": "high",
+    "id": "8"
+  },
+  {
+    "content": "Create Tablet template using real device image",
+    "status": "completed",
+    "priority": "high",
+    "id": "9"
+  },
+  {
+    "content": "Create Tablet Landscape template using real device image",
+    "status": "completed",
+    "priority": "high",
+    "id": "10"
+  },
+  {
+    "content": "Create Mobile template using real device image",
+    "status": "completed",
+    "priority": "high",
+    "id": "11"
+  }
+]
