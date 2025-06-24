@@ -1,0 +1,26 @@
+/* iphone13mini Mockup Setup */
+.iphone13mini .mockup {
+    width: 375px;
+    height: 812px;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 25px;
+    padding: 20px;
+    background: #000;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.iphone13mini .mockup .wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.iphone13mini .mockup iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}

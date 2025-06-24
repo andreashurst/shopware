@@ -1,0 +1,21 @@
+{% extends "@AndreasHurstMockup/storefront/layout/mockup-base.html.twig" %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('bundles/andreashurstmockup/Css/setup.ipadmini.css', 'asset') }}">
+{% endblock %}
+
+{% block content %}
+<div id="container">
+    <section>
+        <div class="display">
+            <div class="ipadmini">
+                <div class="mockup">
+                    <div class="wrapper">
+                        <iframe src="{{ url }}"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

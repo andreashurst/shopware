@@ -16,13 +16,15 @@ Das AndreasHurst Mockup Plugin ermöglicht es, Webseiten in verschiedenen Device
   - Five Layout (5 Devices)
   - Six Layout (6 Devices)
   - Twelve Layout (12 Devices)
-- **Device Varianten**: Unterstützt verschiedene Geräte-Mockups:
-  - Desktop
-  - Laptop
-  - Tablet (Portrait & Landscape)
-  - Mobile Devices
-  - iPhone Modelle (4, 5, 6, 6 Plus, 11 Pro, 12, 12 Max)
-  - Ultrawide Displays
+- **Device Varianten**: Unterstützt über 50 verschiedene Geräte-Mockups:
+  - **Desktop & Laptop**: Desktop, Laptop, Ultrawide, 4K Monitor
+  - **Tablets**: iPad, iPad Mini, iPad Air, iPad Pro (11" & 13"), Surface Pro
+  - **iPhones**: Alle Modelle von iPhone 4 bis iPhone 15 Pro Max
+  - **Android**: Samsung Galaxy S21-S24, Note 20, Fold, Google Pixel 6-8
+  - **MacBooks**: MacBook Air, MacBook Pro 14", MacBook Pro 16"
+  - **Surface**: Surface Pro, Surface Laptop, Surface Studio  
+  - **Gaming**: Steam Deck, Nintendo Switch
+  - **Smart TV**: 55", 65" Smart TV, Apple TV Screen
 
 ## Installation
 
@@ -80,6 +82,29 @@ https://ihre-domain.de/kategorie/electronics?mockup=six
 #### Bestehende Parameter bleiben erhalten
 ```
 https://ihre-domain.de/search?search=laptop&mockup=twelve
+```
+
+#### Moderne Device-Mockups
+```
+# Neueste iPhones
+https://ihre-domain.de/?mockup=iphone15pro
+https://ihre-domain.de/?mockup=iphone14promax
+
+# Android Devices  
+https://ihre-domain.de/?mockup=galaxys24
+https://ihre-domain.de/?mockup=pixel8pro
+
+# Tablets & iPads
+https://ihre-domain.de/?mockup=ipadpro13
+https://ihre-domain.de/?mockup=surfacepro
+
+# MacBooks
+https://ihre-domain.de/?mockup=macbookpro16
+https://ihre-domain.de/?mockup=macbookair
+
+# Gaming & TV
+https://ihre-domain.de/?mockup=steamdeck
+https://ihre-domain.de/?mockup=smarttv65
 ```
 
 ### Funktionsweise
@@ -163,6 +188,16 @@ Für Support und Fragen wenden Sie sich an:
 - Query-Parameter-Funktionalität auf jeder Seite
 - Automatische X-Frame-Options Anpassung
 - URL-Bereinigung für iframe-Embedding
-- Unterstützung für verschiedene Device-Mockups
+- Cookie-Banner automatisch ausblenden
+- Über 50 verschiedene Device-Mockups:
+  - Legacy iPhones (4, 5, 6 Serie)
+  - Moderne iPhones (11 Pro bis 15 Pro Max)
+  - Samsung Galaxy Serie (S21-S24, Note, Fold)
+  - Google Pixel Serie (6-8 Pro)
+  - iPad Familie (Mini, Air, Pro 11"/13")
+  - MacBook Serie (Air, Pro 14"/16")
+  - Surface Geräte (Pro, Laptop, Studio)
+  - Gaming Devices (Steam Deck, Nintendo Switch)
+  - Smart TV & 4K Displays
 - Multiple Layout-Optionen (responsive, trible, quad, five, six, twelve)
 - Responsive Design
