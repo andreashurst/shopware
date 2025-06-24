@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Device Mockup{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+    {% block javascripts %}
+        <script>
+            // Hide cookie banners automatically
+            function hideCookieBanners() {
+                const selectors = [
+                    '#CybotCookiebotDialog',
+                    '#cookieConsentContainer',
+                    '.cookie-consent',
+                    '.cookie-banner',
+                    '.gdpr-banner',
+                    '[id*="cookie"]',
+                    '[class*="cookie"]',
+                    '[data-cookie]',
+                    '#onetrust-consent-sdk',
+                    '.cc-banner',
+                    '.cookie-notice'
+                ];
+                
+                selectors.forEach(selector => {
+                    document.querySelectorAll(selector).forEach(el => {
+                        el.style.display = 'none';
+                    });
+                });
+            }
+            
+            // Run immediately and on DOM ready
+            hideCookieBanners();
+            document.addEventListener('DOMContentLoaded', hideCookieBanners);
+            
+            // Also run periodically to catch dynamically loaded banners
+            setInterval(hideCookieBanners, 1000);
+        </script>
+    {% endblock %}
+</body>
+</html>

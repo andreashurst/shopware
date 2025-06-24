@@ -1,0 +1,129 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}Samsung Galaxy S21 Mockup{% endblock %}
+
+{% block stylesheets %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .device-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .galaxy-s21 {
+        width: 385px;
+        height: 822px;
+        background: linear-gradient(145deg, #c39bd3, #a569bd);
+        border-radius: 35px;
+        padding: 6px;
+        position: relative;
+        box-shadow: 
+            0 0 0 2px #8e44ad,
+            0 20px 40px rgba(0, 0, 0, 0.4),
+            inset 0 1px 2px rgba(255, 255, 255, 0.2);
+    }
+
+    .galaxy-s21::before {
+        content: '';
+        position: absolute;
+        top: 80px;
+        left: -2px;
+        width: 4px;
+        height: 60px;
+        background: #8e44ad;
+        border-radius: 2px 0 0 2px;
+    }
+
+    .galaxy-s21::after {
+        content: '';
+        position: absolute;
+        top: 160px;
+        left: -2px;
+        width: 4px;
+        height: 80px;
+        background: #8e44ad;
+        border-radius: 2px 0 0 2px;
+    }
+
+    .power-button {
+        position: absolute;
+        top: 180px;
+        right: -2px;
+        width: 4px;
+        height: 60px;
+        background: #8e44ad;
+        border-radius: 0 2px 2px 0;
+    }
+
+    .screen {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        border-radius: 29px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .camera-punch {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 12px;
+        height: 12px;
+        background: #000;
+        border-radius: 50%;
+        z-index: 100;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+
+    .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 29px;
+    }
+
+    @media (max-width: 480px) {
+        .galaxy-s21 {
+            transform: scale(0.7);
+        }
+    }
+
+    @media (max-width: 360px) {
+        .galaxy-s21 {
+            transform: scale(0.6);
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="device-container">
+    <div class="galaxy-s21">
+        <div class="power-button"></div>
+        <div class="screen">
+            <div class="camera-punch"></div>
+            <iframe src="{{ cleanUrl }}" title="Samsung Galaxy S21 Mockup"></iframe>
+        </div>
+    </div>
+</div>
+{% endblock %}

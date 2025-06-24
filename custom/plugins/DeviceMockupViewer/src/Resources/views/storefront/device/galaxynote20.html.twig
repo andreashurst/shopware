@@ -1,0 +1,140 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}Samsung Galaxy Note 20 Mockup{% endblock %}
+
+{% block stylesheets %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .device-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .galaxy-note-20 {
+        width: 410px;
+        height: 910px;
+        background: linear-gradient(145deg, #f4d03f, #f1c40f);
+        border-radius: 38px;
+        padding: 8px;
+        position: relative;
+        box-shadow: 
+            0 0 0 2px #d68910,
+            0 20px 40px rgba(0, 0, 0, 0.4),
+            inset 0 1px 2px rgba(255, 255, 255, 0.2);
+    }
+
+    .galaxy-note-20::before {
+        content: '';
+        position: absolute;
+        top: 90px;
+        left: -2px;
+        width: 4px;
+        height: 70px;
+        background: #d68910;
+        border-radius: 2px 0 0 2px;
+    }
+
+    .galaxy-note-20::after {
+        content: '';
+        position: absolute;
+        top: 180px;
+        left: -2px;
+        width: 4px;
+        height: 90px;
+        background: #d68910;
+        border-radius: 2px 0 0 2px;
+    }
+
+    .power-button {
+        position: absolute;
+        top: 200px;
+        right: -2px;
+        width: 4px;
+        height: 70px;
+        background: #d68910;
+        border-radius: 0 2px 2px 0;
+    }
+
+    .s-pen-slot {
+        position: absolute;
+        bottom: 80px;
+        right: 8px;
+        width: 3px;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+    }
+
+    .screen {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .camera-punch {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 12px;
+        height: 12px;
+        background: #000;
+        border-radius: 50%;
+        z-index: 100;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+
+    .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 30px;
+    }
+
+    @media (max-width: 480px) {
+        .galaxy-note-20 {
+            transform: scale(0.6);
+        }
+    }
+
+    @media (max-width: 360px) {
+        .galaxy-note-20 {
+            transform: scale(0.5);
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="device-container">
+    <div class="galaxy-note-20">
+        <div class="power-button"></div>
+        <div class="s-pen-slot"></div>
+        <div class="screen">
+            <div class="camera-punch"></div>
+            <iframe src="{{ cleanUrl }}" title="Samsung Galaxy Note 20 Mockup"></iframe>
+        </div>
+    </div>
+</div>
+{% endblock %}

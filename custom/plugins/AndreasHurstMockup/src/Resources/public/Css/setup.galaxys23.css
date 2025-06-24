@@ -1,13 +1,69 @@
 /* galaxys23 Mockup Setup */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #f5f5f5;
+    min-height: 100vh;
+    display: block !important;
+    flex-direction: initial !important;
+}
+
+main {
+    flex-grow: initial !important;
+}
+
+#container {
+    width: 100% !important;
+    min-height: 100vh;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 40px 20px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    max-width: none !important;
+}
+
+#container section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.display > div {
+    max-width: none !important;
+    width: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galaxys23 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: none !important;
+    width: auto !important;
+}
+
 .galaxys23 .mockup {
     width: 360px;
     height: 780px;
-    margin: 20px auto;
     position: relative;
     border-radius: 25px;
     padding: 20px;
     background: #000;
     box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    margin: 20px;
+    max-width: none !important;
 }
 
 .galaxys23 .mockup .wrapper {
@@ -16,6 +72,7 @@
     border-radius: 15px;
     overflow: hidden;
     background: #fff;
+    position: relative;
 }
 
 .galaxys23 .mockup iframe {
@@ -23,4 +80,27 @@
     height: 100%;
     border: none;
     border-radius: 15px;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .galaxys23 .mockup {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .galaxys23 .mockup {
+        transform: scale(0.6);
+        transform-origin: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .galaxys23 .mockup {
+        transform: scale(0.5);
+        transform-origin: center;
+    }
 }

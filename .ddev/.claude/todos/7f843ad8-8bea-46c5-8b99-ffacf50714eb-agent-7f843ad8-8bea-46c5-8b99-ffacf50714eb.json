@@ -1,8 +1,38 @@
 [
   {
-    "content": "Add modern devices and popular current devices",
+    "content": "Deactivate AndreasHurstMockup plugin",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Read README.md to understand requirements",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create new plugin from scratch with fresh structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Implement device mockup functionality",
     "status": "completed",
     "priority": "medium",
-    "id": "1"
+    "id": "4"
+  },
+  {
+    "content": "Create all modern device templates",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Test new plugin functionality",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
   }
 ]

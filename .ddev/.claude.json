@@ -12,6 +12,34 @@
       "allowedTools": [],
       "history": [
         {
+          "display": "Super genial. Bitte erstelle dies so nun auch für alle gängigen devices.",
+          "pastedContents": {}
+        },
+        {
+          "display": "Ist immer noch gleich... wir sind aber auf einem guten Weg... du weist nun genau was gefordert ist. alles steht in erd Datei \"custom/plugins/AndreasHurstMockup/README.md\" Bitte lass das plugin AndreasHurstMockup so wie es ist deaktiviere es und erstelle ein neues Plugin von grund auf neu. Hier darfst du die Dateinamen und die ordnerstruktur frei wählen.",
+          "pastedContents": {}
+        },
+        {
+          "display": "ist immer noch gleich verschoben",
+          "pastedContents": {}
+        },
+        {
+          "display": "jetzt ist der hinttergrund wieder verschoben...",
+          "pastedContents": {}
+        },
+        {
+          "display": ".display>div hat max-width: 1px; daturch ist immer noch alles als strich zu sehen.",
+          "pastedContents": {}
+        },
+        {
+          "display": "jetz ist es perfekt zentriert aber man sieht leider nur einen schwarzen strich...",
+          "pastedContents": {}
+        },
+        {
+          "display": "Bei manchen devices gibt es noch verschiebungen zum beispiel hier: https://shopware.ddev.site/?mockup=galaxys23",
+          "pastedContents": {}
+        },
+        {
           "display": "Super du hast nun alles gelernt, kannst du auf dieser Basis alle gängigen aktuellen devices noch hinzufügen?",
           "pastedContents": {}
         },

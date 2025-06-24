@@ -1,0 +1,132 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}Google Pixel 8 Pro Mockup{% endblock %}
+
+{% block stylesheets %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .device-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .pixel-8-pro {
+        width: 400px;
+        height: 890px;
+        background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+        border-radius: 32px;
+        padding: 8px;
+        position: relative;
+        box-shadow: 
+            0 0 0 2px #333,
+            0 20px 40px rgba(0, 0, 0, 0.4),
+            inset 0 1px 2px rgba(255, 255, 255, 0.1);
+    }
+
+    .pixel-8-pro::before {
+        content: '';
+        position: absolute;
+        top: 120px;
+        left: -2px;
+        width: 4px;
+        height: 100px;
+        background: #333;
+        border-radius: 2px 0 0 2px;
+    }
+
+    .power-button {
+        position: absolute;
+        top: 200px;
+        right: -2px;
+        width: 4px;
+        height: 60px;
+        background: #333;
+        border-radius: 0 2px 2px 0;
+    }
+
+    .screen {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        border-radius: 24px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .camera-bar {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 30px;
+        background: #1a1a1a;
+        border-radius: 15px;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+
+    .camera-lens {
+        width: 8px;
+        height: 8px;
+        background: #333;
+        border-radius: 50%;
+    }
+
+    .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 24px;
+    }
+
+    @media (max-width: 480px) {
+        .pixel-8-pro {
+            transform: scale(0.7);
+        }
+    }
+
+    @media (max-width: 360px) {
+        .pixel-8-pro {
+            transform: scale(0.6);
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="device-container">
+    <div class="pixel-8-pro">
+        <div class="power-button"></div>
+        <div class="screen">
+            <div class="camera-bar">
+                <div class="camera-lens"></div>
+                <div class="camera-lens"></div>
+                <div class="camera-lens"></div>
+            </div>
+            <iframe src="{{ cleanUrl }}" title="Google Pixel 8 Pro Mockup"></iframe>
+        </div>
+    </div>
+</div>
+{% endblock %}

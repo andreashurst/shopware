@@ -1,0 +1,140 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}MacBook Pro 14" Mockup{% endblock %}
+
+{% block stylesheets %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .device-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .macbook-pro-14 {
+        width: 950px;
+        height: 620px;
+        position: relative;
+        perspective: 1000px;
+    }
+
+    .macbook-screen {
+        width: 100%;
+        height: 580px;
+        background: linear-gradient(145deg, #2c2c2e, #1c1c1e);
+        border-radius: 14px;
+        padding: 11px;
+        position: relative;
+        transform: rotateX(-4deg);
+        box-shadow: 
+            0 0 0 2px #4a4a4c,
+            0 22px 45px rgba(0, 0, 0, 0.35),
+            inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    }
+
+    .screen {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .notch {
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 28px;
+        background: #000;
+        border-radius: 0 0 15px 15px;
+        z-index: 100;
+    }
+
+    .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .macbook-base {
+        width: 104%;
+        height: 75px;
+        background: linear-gradient(145deg, #2c2c2e, #1c1c1e);
+        border-radius: 0 0 18px 18px;
+        position: absolute;
+        bottom: -38px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 
+            0 10px 28px rgba(0, 0, 0, 0.4),
+            inset 0 1px 2px rgba(255, 255, 255, 0.1);
+    }
+
+    .trackpad {
+        width: 140px;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 1100px) {
+        .macbook-pro-14 {
+            transform: scale(0.8);
+        }
+    }
+
+    @media (max-width: 850px) {
+        .macbook-pro-14 {
+            transform: scale(0.6);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .macbook-pro-14 {
+            transform: scale(0.4);
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="device-container">
+    <div class="macbook-pro-14">
+        <div class="macbook-screen">
+            <div class="screen">
+                <div class="notch"></div>
+                <iframe src="{{ cleanUrl }}" title="MacBook Pro 14 Mockup"></iframe>
+            </div>
+        </div>
+        <div class="macbook-base">
+            <div class="trackpad"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

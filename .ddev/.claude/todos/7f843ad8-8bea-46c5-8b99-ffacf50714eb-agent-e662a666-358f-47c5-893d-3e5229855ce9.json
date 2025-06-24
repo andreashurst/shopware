@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Create iPhone device templates: iphone4, iphone5, iphone6, iphone6plus, iphone11pro, iphone12, iphone12max, iphone13, iphone13mini, iphone13pro, iphone13promax, iphone14, iphone14plus, iphone14pro, iphone14promax, iphone15, iphone15plus",
+    "status": "completed",
+    "priority": "high",
+    "id": "iphone-templates"
+  },
+  {
+    "content": "Create Samsung Galaxy device templates: galaxys21, galaxys22, galaxys23, galaxynote20, galaxyfold",
+    "status": "completed",
+    "priority": "high",
+    "id": "samsung-templates"
+  },
+  {
+    "content": "Create Google Pixel device templates: pixel6, pixel7, pixel8",
+    "status": "completed",
+    "priority": "high",
+    "id": "pixel-templates"
+  },
+  {
+    "content": "Create iPad device templates: ipad, ipadmini, ipadair, ipadpro11",
+    "status": "completed",
+    "priority": "high",
+    "id": "ipad-templates"
+  },
+  {
+    "content": "Create MacBook device templates: macbookair, macbookpro14",
+    "status": "completed",
+    "priority": "high",
+    "id": "macbook-templates"
+  },
+  {
+    "content": "Create Microsoft Surface device templates: surfacepro, surfacelaptop, surfacestudio",
+    "status": "pending",
+    "priority": "medium",
+    "id": "surface-templates"
+  },
+  {
+    "content": "Create desktop/laptop templates: desktop, laptop, ultrawide, monitor4k",
+    "status": "completed",
+    "priority": "high",
+    "id": "desktop-templates"
+  },
+  {
+    "content": "Create gaming device templates: nintendoswitch",
+    "status": "completed",
+    "priority": "high",
+    "id": "gaming-templates"
+  },
+  {
+    "content": "Create Smart TV templates: smarttv55, appletvscreen",
+    "status": "completed",
+    "priority": "high",
+    "id": "tv-templates"
+  },
+  {
+    "content": "Create multi-device layout templates: responsive, trible, quad, five, six, twelve",
+    "status": "completed",
+    "priority": "high",
+    "id": "layout-templates"
+  }
+]

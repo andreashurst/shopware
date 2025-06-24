@@ -1,0 +1,178 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}Responsive Multi-Device Mockup{% endblock %}
+
+{% block stylesheets %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .device-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    /* Desktop */
+    .desktop {
+        width: 500px;
+        height: 320px;
+        background: linear-gradient(145deg, #2c2c2e, #1c1c1e);
+        border-radius: 12px;
+        padding: 8px;
+        position: relative;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .desktop .screen {
+        width: 100%;
+        height: 280px;
+        background: #000;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .desktop .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .desktop .stand {
+        width: 80px;
+        height: 40px;
+        background: #333;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 0 0 8px 8px;
+    }
+
+    /* Tablet */
+    .tablet {
+        width: 350px;
+        height: 460px;
+        background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+        border-radius: 25px;
+        padding: 15px;
+        position: relative;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .tablet .screen {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .tablet .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 12px;
+    }
+
+    /* Phone */
+    .phone {
+        width: 200px;
+        height: 420px;
+        background: linear-gradient(145deg, #2c2c2e, #1c1c1e);
+        border-radius: 30px;
+        padding: 6px;
+        position: relative;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .phone .screen {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        border-radius: 24px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .phone .notch {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 20px;
+        background: #000;
+        border-radius: 0 0 12px 12px;
+        z-index: 100;
+    }
+
+    .phone .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 24px;
+    }
+
+    @media (max-width: 1200px) {
+        .device-container {
+            transform: scale(0.8);
+        }
+    }
+
+    @media (max-width: 900px) {
+        .device-container {
+            transform: scale(0.6);
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .device-container {
+            transform: scale(0.5);
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="device-container">
+    <div class="desktop">
+        <div class="screen">
+            <iframe src="{{ cleanUrl }}" title="Desktop View"></iframe>
+        </div>
+        <div class="stand"></div>
+    </div>
+    
+    <div class="tablet">
+        <div class="screen">
+            <iframe src="{{ cleanUrl }}" title="Tablet View"></iframe>
+        </div>
+    </div>
+    
+    <div class="phone">
+        <div class="screen">
+            <div class="notch"></div>
+            <iframe src="{{ cleanUrl }}" title="Mobile View"></iframe>
+        </div>
+    </div>
+</div>
+{% endblock %}

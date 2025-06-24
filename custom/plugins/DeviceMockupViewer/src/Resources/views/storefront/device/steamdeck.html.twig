@@ -1,0 +1,179 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}Steam Deck Mockup{% endblock %}
+
+{% block stylesheets %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .device-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .steam-deck {
+        width: 900px;
+        height: 400px;
+        background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+        border-radius: 25px;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 
+            0 0 0 3px #333,
+            0 20px 40px rgba(0, 0, 0, 0.4),
+            inset 0 2px 4px rgba(255, 255, 255, 0.05);
+    }
+
+    .left-controls {
+        width: 150px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .right-controls {
+        width: 150px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .analog-stick {
+        width: 40px;
+        height: 40px;
+        background: #333;
+        border-radius: 50%;
+        border: 3px solid #555;
+        position: relative;
+    }
+
+    .analog-stick::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background: #666;
+        border-radius: 50%;
+    }
+
+    .trackpad {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+        border: 2px solid #333;
+    }
+
+    .screen {
+        width: 480px;
+        height: 300px;
+        background: #000;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 20px;
+    }
+
+    .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 15px;
+    }
+
+    .dpad {
+        width: 50px;
+        height: 50px;
+        background: #333;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .button {
+        background: #333;
+        border-radius: 50%;
+        border: 2px solid #555;
+    }
+
+    @media (max-width: 1000px) {
+        .steam-deck {
+            transform: scale(0.8);
+        }
+    }
+
+    @media (max-width: 800px) {
+        .steam-deck {
+            transform: scale(0.6);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .steam-deck {
+            transform: scale(0.4);
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="device-container">
+    <div class="steam-deck">
+        <div class="left-controls">
+            <div class="analog-stick"></div>
+            <div class="dpad"></div>
+            <div class="trackpad"></div>
+        </div>
+        
+        <div class="screen">
+            <iframe src="{{ cleanUrl }}" title="Steam Deck Mockup"></iframe>
+        </div>
+        
+        <div class="right-controls">
+            <div class="buttons">
+                <div class="button"></div>
+                <div class="button"></div>
+                <div class="button"></div>
+                <div class="button"></div>
+            </div>
+            <div class="analog-stick"></div>
+            <div class="trackpad"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

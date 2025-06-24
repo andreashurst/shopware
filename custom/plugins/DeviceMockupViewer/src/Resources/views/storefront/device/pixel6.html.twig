@@ -1,0 +1,169 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}Google Pixel 6 Mockup{% endblock %}
+
+{% block stylesheets %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .device-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .pixel-6 {
+        width: 390px;
+        height: 844px;
+        background: linear-gradient(145deg, #4285f4, #34a853);
+        border-radius: 35px;
+        padding: 6px;
+        position: relative;
+        box-shadow: 
+            0 0 0 2px #1a73e8,
+            0 20px 40px rgba(0, 0, 0, 0.4),
+            inset 0 1px 2px rgba(255, 255, 255, 0.2);
+    }
+
+    .pixel-6::before {
+        content: '';
+        position: absolute;
+        top: 80px;
+        left: -2px;
+        width: 4px;
+        height: 60px;
+        background: #1a73e8;
+        border-radius: 2px 0 0 2px;
+    }
+
+    .pixel-6::after {
+        content: '';
+        position: absolute;
+        top: 160px;
+        left: -2px;
+        width: 4px;
+        height: 80px;
+        background: #1a73e8;
+        border-radius: 2px 0 0 2px;
+    }
+
+    .power-button {
+        position: absolute;
+        top: 180px;
+        right: -2px;
+        width: 4px;
+        height: 60px;
+        background: #1a73e8;
+        border-radius: 0 2px 2px 0;
+    }
+
+    .camera-bar {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: linear-gradient(145deg, #333, #111);
+        border-radius: 35px 35px 10px 10px;
+        z-index: 50;
+    }
+
+    .camera-bump {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 60px;
+        height: 40px;
+        background: #000;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .camera-lens {
+        width: 15px;
+        height: 15px;
+        background: #333;
+        border-radius: 50%;
+        border: 2px solid #666;
+    }
+
+    .screen {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        border-radius: 29px;
+        overflow: hidden;
+        position: relative;
+        z-index: 100;
+    }
+
+    .camera-punch {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 12px;
+        height: 12px;
+        background: #000;
+        border-radius: 50%;
+        z-index: 200;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+
+    .screen iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 29px;
+    }
+
+    @media (max-width: 480px) {
+        .pixel-6 {
+            transform: scale(0.7);
+        }
+    }
+
+    @media (max-width: 360px) {
+        .pixel-6 {
+            transform: scale(0.6);
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="device-container">
+    <div class="pixel-6">
+        <div class="camera-bar">
+            <div class="camera-bump">
+                <div class="camera-lens"></div>
+                <div class="camera-lens"></div>
+            </div>
+        </div>
+        <div class="power-button"></div>
+        <div class="screen">
+            <div class="camera-punch"></div>
+            <iframe src="{{ cleanUrl }}" title="Google Pixel 6 Mockup"></iframe>
+        </div>
+    </div>
+</div>
+{% endblock %}

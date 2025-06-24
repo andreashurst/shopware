@@ -1,0 +1,32 @@
+{
+    "name": "custom/device-mockup-viewer",
+    "description": "A modern Shopware 6 plugin for displaying websites in device mockups",
+    "version": "1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Claude Code",
+            "email": "noreply@anthropic.com"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeviceMockupViewer\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "DeviceMockupViewer\\DeviceMockupViewer",
+        "label": {
+            "de-DE": "Device Mockup Viewer",
+            "en-GB": "Device Mockup Viewer"
+        },
+        "description": {
+            "de-DE": "Ein Plugin zur Darstellung von Webseiten in Device-Mockups über Query-Parameter",
+            "en-GB": "A plugin for displaying websites in device mockups via query parameters"
+        }
+    }
+}
