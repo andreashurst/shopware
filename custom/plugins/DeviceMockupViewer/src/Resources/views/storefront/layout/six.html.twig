@@ -1,0 +1,22 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}Six Device Layout Mockup{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/devicemockupviewer/css/layouts.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="layout-container">
+    <div class="six-layout">
+        {% for i in 1..6 %}
+        <div class="six-device">
+            <div class="screen screen-base">
+                <iframe src="{{ cleanUrl }}" title="Device {{ i }} Mockup"></iframe>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

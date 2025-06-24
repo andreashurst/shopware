@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Update all iPhone template files to use external iphone.css and remove inline styles",
+    "status": "completed",
+    "priority": "high",
+    "id": "iphone-templates"
+  },
+  {
+    "content": "Update all Android (Samsung Galaxy, Google Pixel) template files to use external android.css",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "android-templates"
+  },
+  {
+    "content": "Update all tablet template files (iPad variants) to use external tablet.css",
+    "status": "pending",
+    "priority": "high",
+    "id": "tablet-templates"
+  },
+  {
+    "content": "Update all laptop/desktop template files (MacBook, Desktop, Laptop) to use external laptop.css",
+    "status": "pending",
+    "priority": "high",
+    "id": "laptop-templates"
+  },
+  {
+    "content": "Update gaming device templates (Steam Deck, Nintendo Switch) to use external gaming.css",
+    "status": "pending",
+    "priority": "high",
+    "id": "gaming-templates"
+  },
+  {
+    "content": "Update Smart TV template files to use external tv.css",
+    "status": "pending",
+    "priority": "high",
+    "id": "tv-templates"
+  }
+]

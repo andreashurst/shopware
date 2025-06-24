@@ -1,0 +1,238 @@
+/* iPhone specific styles */
+
+/* iPhone 15 Pro */
+.iphone-15-pro {
+    width: 400px;
+    height: 870px;
+    background: var(--device-dark);
+    border-radius: var(--border-radius-large);
+    padding: 8px;
+}
+
+.iphone-15-pro::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    height: 80px;
+}
+
+.iphone-15-pro::after {
+    content: '';
+    position: absolute;
+    top: 150px;
+    height: 120px;
+}
+
+.iphone-15-pro .screen {
+    border-radius: 42px;
+}
+
+.iphone-15-pro .screen iframe {
+    border-radius: 42px;
+}
+
+/* iPhone 15 Pro Max */
+.iphone-15-pro-max {
+    width: 430px;
+    height: 932px;
+    background: var(--device-dark);
+    border-radius: 55px;
+    padding: 8px;
+}
+
+.iphone-15-pro-max::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    height: 80px;
+}
+
+.iphone-15-pro-max::after {
+    content: '';
+    position: absolute;
+    top: 150px;
+    height: 120px;
+}
+
+.iphone-15-pro-max .power-button {
+    top: 200px;
+    height: 80px;
+}
+
+.iphone-15-pro-max .screen {
+    border-radius: 47px;
+}
+
+.iphone-15-pro-max .screen iframe {
+    border-radius: 47px;
+}
+
+/* iPhone 14 series - similar to 15 but slightly different dimensions */
+.iphone-14-pro,
+.iphone-14-pro-max {
+    background: var(--device-dark);
+}
+
+.iphone-14-pro {
+    width: 390px;
+    height: 844px;
+    border-radius: 47px;
+    padding: 8px;
+}
+
+.iphone-14-pro-max {
+    width: 428px;
+    height: 926px;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+/* iPhone 13 series */
+.iphone-13,
+.iphone-13-mini,
+.iphone-13-pro,
+.iphone-13-pro-max {
+    background: var(--device-dark);
+    border-radius: 47px;
+    padding: 8px;
+}
+
+.iphone-13 {
+    width: 390px;
+    height: 844px;
+}
+
+.iphone-13-mini {
+    width: 375px;
+    height: 812px;
+}
+
+.iphone-13-pro {
+    width: 390px;
+    height: 844px;
+}
+
+.iphone-13-pro-max {
+    width: 428px;
+    height: 926px;
+}
+
+/* iPhone 12 series */
+.iphone-12,
+.iphone-12-max {
+    background: var(--device-dark);
+    border-radius: 47px;
+    padding: 8px;
+}
+
+.iphone-12 {
+    width: 390px;
+    height: 844px;
+}
+
+.iphone-12-max {
+    width: 428px;
+    height: 926px;
+}
+
+/* iPhone 11 Pro */
+.iphone-11-pro {
+    width: 375px;
+    height: 812px;
+    background: var(--device-dark);
+    border-radius: 40px;
+    padding: 8px;
+}
+
+/* Older iPhones with home buttons */
+.iphone-6,
+.iphone-6-plus {
+    background: var(--device-dark);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.iphone-6 {
+    width: 375px;
+    height: 667px;
+}
+
+.iphone-6-plus {
+    width: 414px;
+    height: 736px;
+}
+
+.iphone-5 {
+    width: 320px;
+    height: 568px;
+    background: var(--device-dark);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.iphone-4 {
+    width: 320px;
+    height: 480px;
+    background: var(--device-dark);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Home button for older iPhones */
+.home-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    z-index: 100;
+}
+
+.home-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+/* Common iPhone screen styles */
+.iphone-screen {
+    border-radius: inherit;
+}
+
+.iphone-screen iframe {
+    border-radius: inherit;
+}
+
+/* iPhone specific responsive scaling */
+.iphone-15-pro,
+.iphone-15-pro-max,
+.iphone-14-pro,
+.iphone-14-pro-max,
+.iphone-13,
+.iphone-13-mini,
+.iphone-13-pro,
+.iphone-13-pro-max,
+.iphone-12,
+.iphone-12-max,
+.iphone-11-pro {
+    @extend .scale-480;
+    @extend .scale-360;
+}
+
+.iphone-6,
+.iphone-6-plus,
+.iphone-5,
+.iphone-4 {
+    @extend .scale-480;
+    @extend .scale-360;
+}

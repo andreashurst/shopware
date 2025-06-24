@@ -1,0 +1,154 @@
+/* Tablet device styles */
+
+/* iPad series */
+.ipad-pro-13 {
+    width: 700px;
+    height: 950px;
+    background: var(--device-dark);
+    border-radius: var(--border-radius-medium);
+    padding: 15px;
+}
+
+.ipad-pro-11 {
+    width: 600px;
+    height: 850px;
+    background: var(--device-dark);
+    border-radius: var(--border-radius-medium);
+    padding: 15px;
+}
+
+.ipad-air {
+    width: 580px;
+    height: 820px;
+    background: var(--device-dark);
+    border-radius: var(--border-radius-medium);
+    padding: 15px;
+}
+
+.ipad {
+    width: 550px;
+    height: 780px;
+    background: var(--device-dark);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.ipad-mini {
+    width: 480px;
+    height: 650px;
+    background: var(--device-dark);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+/* iPad screens */
+.ipad-pro-13 .screen,
+.ipad-pro-11 .screen,
+.ipad-air .screen {
+    border-radius: var(--border-radius-small);
+}
+
+.ipad .screen,
+.ipad-mini .screen {
+    border-radius: 12px;
+}
+
+.ipad-pro-13 .screen iframe,
+.ipad-pro-11 .screen iframe,
+.ipad-air .screen iframe {
+    border-radius: var(--border-radius-small);
+}
+
+.ipad .screen iframe,
+.ipad-mini .screen iframe {
+    border-radius: 12px;
+}
+
+/* iPad camera bump for Pro models */
+.ipad-pro-13 .camera-bump,
+.ipad-pro-11 .camera-bump {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 25px;
+    background: #1c1c1e;
+    border-radius: 12px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ipad-pro-13 .camera-lens,
+.ipad-pro-11 .camera-lens {
+    width: 8px;
+    height: 8px;
+    background: var(--button-color);
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+/* Surface tablets */
+.surface-pro {
+    width: 650px;
+    height: 900px;
+    background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+    border-radius: 15px;
+    padding: 12px;
+    position: relative;
+}
+
+.surface-pro .screen {
+    border-radius: 8px;
+}
+
+.surface-pro .screen iframe {
+    border-radius: 8px;
+}
+
+.surface-pro .windows-button {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    z-index: 100;
+}
+
+.surface-pro .kickstand {
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+    right: 20%;
+    height: 20px;
+    background: linear-gradient(145deg, #d0d0d0, #b8b8b8);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet responsive scaling */
+.ipad-pro-13 {
+    @extend .scale-800;
+    @extend .scale-600;
+    @extend .scale-400;
+}
+
+.ipad-pro-11,
+.ipad-air,
+.surface-pro {
+    @extend .scale-800;
+    @extend .scale-600;
+    @extend .scale-400;
+}
+
+.ipad,
+.ipad-mini {
+    @extend .scale-800;
+    @extend .scale-600;
+    @extend .scale-480;
+}

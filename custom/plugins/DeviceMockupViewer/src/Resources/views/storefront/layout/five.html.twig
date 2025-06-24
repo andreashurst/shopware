@@ -1,0 +1,44 @@
+{% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
+
+{% block title %}Five Device Layout Mockup{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/devicemockupviewer/css/layouts.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="layout-container">
+    <div class="five-layout">
+        <div class="five-device five-top">
+            <div class="screen screen-base">
+                <iframe src="{{ cleanUrl }}" title="Top Device Mockup"></iframe>
+            </div>
+        </div>
+        
+        <div class="five-device five-left">
+            <div class="screen screen-base">
+                <iframe src="{{ cleanUrl }}" title="Left Device Mockup"></iframe>
+            </div>
+        </div>
+        
+        <div class="five-device five-center">
+            <div class="screen screen-base">
+                <iframe src="{{ cleanUrl }}" title="Center Device Mockup"></iframe>
+            </div>
+        </div>
+        
+        <div class="five-device five-right">
+            <div class="screen screen-base">
+                <iframe src="{{ cleanUrl }}" title="Right Device Mockup"></iframe>
+            </div>
+        </div>
+        
+        <div class="five-device five-bottom">
+            <div class="screen screen-base">
+                <iframe src="{{ cleanUrl }}" title="Bottom Device Mockup"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -3,116 +3,15 @@
 {% block title %}iPhone 4 Mockup{% endblock %}
 
 {% block stylesheets %}
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-
-    .device-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        width: 100%;
-    }
-
-    .iphone-4 {
-        width: 320px;
-        height: 640px;
-        background: linear-gradient(145deg, #2c2c2e, #1c1c1e);
-        border-radius: 30px;
-        padding: 20px 15px;
-        position: relative;
-        box-shadow: 
-            0 0 0 3px #4a4a4c,
-            0 25px 50px rgba(0, 0, 0, 0.5),
-            inset 0 2px 4px rgba(255, 255, 255, 0.1);
-    }
-
-    .home-button {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 60px;
-        background: #2c2c2e;
-        border-radius: 50%;
-        border: 2px solid #4a4a4c;
-        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .home-button::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40px;
-        height: 40px;
-        border: 2px solid rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-    }
-
-    .speaker {
-        position: absolute;
-        top: 35px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 8px;
-        background: #000;
-        border-radius: 4px;
-    }
-
-    .screen {
-        width: 100%;
-        height: 480px;
-        background: #000;
-        border-radius: 8px;
-        overflow: hidden;
-        position: relative;
-        margin-top: 25px;
-    }
-
-    .screen iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 8px;
-    }
-
-    @media (max-width: 480px) {
-        .iphone-4 {
-            transform: scale(0.8);
-        }
-    }
-
-    @media (max-width: 360px) {
-        .iphone-4 {
-            transform: scale(0.7);
-        }
-    }
-</style>
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/devicemockupviewer/css/devices/iphone.css') }}">
 {% endblock %}
 
 {% block content %}
 <div class="device-container">
-    <div class="iphone-4">
+    <div class="iphone-4 device-base scale-480 scale-360">
         <div class="speaker"></div>
-        <div class="screen">
+        <div class="screen screen-base iphone-screen">
             <iframe src="{{ cleanUrl }}" title="iPhone 4 Mockup"></iframe>
         </div>
         <div class="home-button"></div>

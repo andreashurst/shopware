@@ -1,0 +1,223 @@
+/* Gaming device styles */
+
+/* Steam Deck */
+.steam-deck {
+    width: 900px;
+    height: 400px;
+    background: var(--device-darker);
+    border-radius: var(--border-radius-medium);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+        0 0 0 3px var(--device-border-thin),
+        var(--shadow-light),
+        var(--shadow-inset-light);
+}
+
+.steam-deck .left-controls,
+.steam-deck .right-controls {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.steam-deck .screen {
+    width: 480px;
+    height: 300px;
+    border-radius: var(--border-radius-small);
+    margin: 0 20px;
+}
+
+.steam-deck .screen iframe {
+    border-radius: var(--border-radius-small);
+}
+
+.analog-stick {
+    width: 40px;
+    height: 40px;
+    background: var(--button-color);
+    border-radius: 50%;
+    border: 3px solid var(--button-border);
+    position: relative;
+}
+
+.analog-stick::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.trackpad {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    border: 2px solid var(--button-color);
+}
+
+.dpad {
+    width: 50px;
+    height: 50px;
+    background: var(--button-color);
+    border-radius: var(--border-radius-tiny);
+    position: relative;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.button {
+    background: var(--button-color);
+    border-radius: 50%;
+    border: 2px solid var(--button-border);
+}
+
+/* Nintendo Switch */
+.nintendo-switch {
+    width: 800px;
+    height: 350px;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+        0 0 0 2px var(--device-border-thin),
+        var(--shadow-light),
+        var(--shadow-inset-light);
+}
+
+.nintendo-switch .left-joycon,
+.nintendo-switch .right-joycon {
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(145deg, #4a90e2, #357abd);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nintendo-switch .right-joycon {
+    background: linear-gradient(145deg, #e24a4a, #bd3535);
+}
+
+.nintendo-switch .screen {
+    width: 420px;
+    height: 280px;
+    border-radius: 12px;
+    margin: 0 15px;
+}
+
+.nintendo-switch .screen iframe {
+    border-radius: 12px;
+}
+
+.nintendo-switch .joy-stick {
+    width: 35px;
+    height: 35px;
+    background: #333;
+    border-radius: 50%;
+    border: 2px solid #555;
+    position: relative;
+}
+
+.nintendo-switch .joy-stick::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.nintendo-switch .action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+.nintendo-switch .action-button {
+    background: #333;
+    border-radius: 50%;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.nintendo-switch .dpad-switch {
+    width: 45px;
+    height: 45px;
+    background: #333;
+    border-radius: var(--border-radius-tiny);
+    position: relative;
+    border: 1px solid #555;
+}
+
+.nintendo-switch .dpad-switch::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 8px;
+    background: #666;
+}
+
+.nintendo-switch .dpad-switch::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 30px;
+    background: #666;
+}
+
+/* Gaming responsive scaling */
+.steam-deck {
+    @extend .scale-1000;
+    @extend .scale-800;
+    @extend .scale-600;
+}
+
+.nintendo-switch {
+    @extend .scale-900;
+    @extend .scale-700;
+    @extend .scale-500;
+}

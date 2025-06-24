@@ -1,0 +1,175 @@
+/* TV and large screen device styles */
+
+/* Smart TV 65" */
+.smart-tv-65 {
+    width: 1200px;
+    height: 700px;
+    background: var(--device-black);
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 
+        0 0 0 3px var(--device-border-thin),
+        var(--shadow-heavy),
+        var(--shadow-inset-light);
+}
+
+.smart-tv-65 .screen {
+    border-radius: 10px;
+}
+
+.smart-tv-65 .screen iframe {
+    border-radius: 10px;
+}
+
+/* Smart TV 55" */
+.smart-tv-55 {
+    width: 1000px;
+    height: 580px;
+    background: var(--device-black);
+    border-radius: 18px;
+    padding: 12px;
+    position: relative;
+    box-shadow: 
+        0 0 0 3px var(--device-border-thin),
+        var(--shadow-heavy),
+        var(--shadow-inset-light);
+}
+
+.smart-tv-55 .screen {
+    border-radius: var(--border-radius-tiny);
+}
+
+.smart-tv-55 .screen iframe {
+    border-radius: var(--border-radius-tiny);
+}
+
+/* TV Stand */
+.tv-stand {
+    width: 300px;
+    height: 80px;
+    background: var(--device-darker);
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        var(--shadow-inset-light);
+}
+
+.tv-stand::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 20px;
+    background: #2a2a2a;
+    border-radius: 5px;
+}
+
+.smart-tv-55 .tv-stand {
+    width: 250px;
+    height: 70px;
+}
+
+.smart-tv-55 .tv-stand::before {
+    width: 80px;
+    height: 18px;
+}
+
+/* Brand logo */
+.brand-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.smart-tv-55 .brand-logo {
+    font-size: 12px;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Apple TV Screen */
+.apple-tv-screen {
+    width: 800px;
+    height: 480px;
+    background: var(--device-black);
+    border-radius: 15px;
+    padding: 12px;
+    position: relative;
+    box-shadow: 
+        0 0 0 2px var(--device-border-thin),
+        var(--shadow-light),
+        var(--shadow-inset-light);
+}
+
+.apple-tv-screen .screen {
+    border-radius: var(--border-radius-tiny);
+}
+
+.apple-tv-screen .screen iframe {
+    border-radius: var(--border-radius-tiny);
+}
+
+.apple-tv-screen .apple-logo {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.apple-tv-screen .apple-logo::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+}
+
+/* TV container for centering with stand */
+.tv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* TV responsive scaling */
+.smart-tv-65 {
+    @extend .scale-1400;
+    @extend .scale-1000;
+    @extend .scale-700;
+    @extend .scale-500;
+}
+
+.smart-tv-55 {
+    @extend .scale-1200;
+    @extend .scale-900;
+    @extend .scale-600;
+    @extend .scale-400;
+}
+
+.apple-tv-screen {
+    @extend .scale-900;
+    @extend .scale-700;
+    @extend .scale-500;
+}

@@ -1,38 +1,32 @@
 [
   {
-    "content": "Deactivate AndreasHurstMockup plugin",
+    "content": "Create CSS helper system for device mockups",
     "status": "completed",
     "priority": "high",
     "id": "1"
   },
   {
-    "content": "Read README.md to understand requirements",
+    "content": "Extract inline CSS to external files",
     "status": "completed",
     "priority": "high",
     "id": "2"
   },
   {
-    "content": "Create new plugin from scratch with fresh structure",
+    "content": "Create CSS mixins and variables for common patterns",
     "status": "completed",
-    "priority": "high",
+    "priority": "medium",
     "id": "3"
   },
   {
-    "content": "Implement device mockup functionality",
+    "content": "Update templates to use external CSS",
     "status": "completed",
     "priority": "medium",
     "id": "4"
   },
   {
-    "content": "Create all modern device templates",
+    "content": "Install CSS assets and fix 404 errors",
     "status": "completed",
     "priority": "high",
-    "id": "6"
-  },
-  {
-    "content": "Test new plugin functionality",
-    "status": "completed",
-    "priority": "medium",
     "id": "5"
   }
 ]

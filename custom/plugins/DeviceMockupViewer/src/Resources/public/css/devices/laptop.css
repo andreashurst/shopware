@@ -1,0 +1,366 @@
+/* Laptop and desktop device styles */
+
+/* MacBook series */
+.macbook-pro-16 {
+    width: 1000px;
+    height: 650px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.macbook-pro-14 {
+    width: 900px;
+    height: 580px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.macbook-air {
+    width: 850px;
+    height: 550px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.macbook-screen {
+    width: 100%;
+    height: 600px;
+    background: var(--device-dark);
+    border-radius: var(--border-radius-small);
+    padding: 12px;
+    position: relative;
+    transform: rotateX(-5deg);
+    box-shadow: 
+        0 0 0 2px var(--device-border),
+        var(--shadow-heavy),
+        var(--shadow-inset);
+}
+
+.macbook-pro-14 .macbook-screen {
+    height: 520px;
+}
+
+.macbook-air .macbook-screen {
+    height: 490px;
+}
+
+.macbook-screen .screen {
+    border-radius: var(--border-radius-tiny);
+}
+
+.macbook-screen .screen iframe {
+    border-radius: var(--border-radius-tiny);
+}
+
+.macbook-base {
+    width: 105%;
+    height: 80px;
+    background: var(--device-dark);
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        var(--shadow-inset-light);
+}
+
+.trackpad {
+    width: 150px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-tiny);
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.macbook-air .trackpad {
+    width: 120px;
+    height: 80px;
+}
+
+/* MacBook notch for newer models */
+.notch {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 28px;
+    background: var(--screen-black);
+    border-radius: 0 0 15px 15px;
+    z-index: 100;
+}
+
+.macbook-air .notch {
+    width: 180px;
+    height: 25px;
+}
+
+/* Surface Laptop */
+.surface-laptop {
+    width: 950px;
+    height: 620px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.surface-laptop .laptop-screen {
+    width: 100%;
+    height: 580px;
+    background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+    border-radius: 12px;
+    padding: 15px;
+    position: relative;
+    transform: rotateX(-5deg);
+    box-shadow: 
+        0 0 0 2px #ccc,
+        0 25px 50px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.surface-laptop .screen {
+    border-radius: var(--border-radius-tiny);
+}
+
+.surface-laptop .screen iframe {
+    border-radius: var(--border-radius-tiny);
+}
+
+.surface-laptop .laptop-base {
+    width: 105%;
+    height: 70px;
+    background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.2),
+        inset 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.surface-laptop .trackpad {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Surface Studio */
+.surface-studio {
+    width: 1200px;
+    height: 800px;
+    position: relative;
+}
+
+.surface-studio .studio-screen {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    transform: rotateX(-10deg);
+    box-shadow: 
+        0 0 0 3px #ccc,
+        0 30px 60px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.surface-studio .screen {
+    border-radius: 10px;
+}
+
+.surface-studio .screen iframe {
+    border-radius: 10px;
+}
+
+.surface-studio .studio-base {
+    width: 400px;
+    height: 120px;
+    background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+    border-radius: 15px;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.2),
+        inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Generic laptop */
+.laptop {
+    width: 900px;
+    height: 580px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.laptop .laptop-screen {
+    width: 100%;
+    height: 540px;
+    background: var(--device-darker);
+    border-radius: 12px;
+    padding: 12px;
+    position: relative;
+    transform: rotateX(-5deg);
+    box-shadow: 
+        0 0 0 2px var(--device-border-thin),
+        var(--shadow-light),
+        var(--shadow-inset-light);
+}
+
+.laptop .screen {
+    border-radius: var(--border-radius-tiny);
+}
+
+.laptop .screen iframe {
+    border-radius: var(--border-radius-tiny);
+}
+
+.laptop .laptop-base {
+    width: 105%;
+    height: 70px;
+    background: var(--device-darker);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        var(--shadow-inset-light);
+}
+
+/* Desktop computer */
+.desktop {
+    width: 1000px;
+    height: 700px;
+    position: relative;
+}
+
+.desktop .monitor {
+    width: 100%;
+    height: 600px;
+    background: var(--device-darker);
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 
+        0 0 0 3px var(--device-border-thin),
+        var(--shadow-light),
+        var(--shadow-inset-light);
+}
+
+.desktop .screen {
+    border-radius: 10px;
+}
+
+.desktop .screen iframe {
+    border-radius: 10px;
+}
+
+.desktop .monitor-stand {
+    width: 100px;
+    height: 80px;
+    background: var(--device-darker);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: var(--shadow-light);
+}
+
+.desktop .monitor-base {
+    width: 300px;
+    height: 20px;
+    background: var(--device-darker);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: var(--shadow-light);
+}
+
+/* Ultrawide monitor */
+.ultrawide {
+    width: 1400px;
+    height: 650px;
+    position: relative;
+}
+
+.ultrawide .monitor {
+    width: 100%;
+    height: 580px;
+    background: var(--device-darker);
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 
+        0 0 0 3px var(--device-border-thin),
+        var(--shadow-light),
+        var(--shadow-inset-light);
+}
+
+.ultrawide .screen {
+    border-radius: 12px;
+}
+
+.ultrawide .screen iframe {
+    border-radius: 12px;
+}
+
+/* 4K Monitor */
+.monitor-4k {
+    width: 1200px;
+    height: 750px;
+    position: relative;
+}
+
+.monitor-4k .monitor {
+    width: 100%;
+    height: 680px;
+    background: var(--device-darker);
+    border-radius: 18px;
+    padding: 18px;
+    position: relative;
+    box-shadow: 
+        0 0 0 3px var(--device-border-thin),
+        var(--shadow-light),
+        var(--shadow-inset-light);
+}
+
+.monitor-4k .screen {
+    border-radius: 12px;
+}
+
+.monitor-4k .screen iframe {
+    border-radius: 12px;
+}
+
+/* Laptop responsive scaling */
+.macbook-pro-16,
+.surface-studio,
+.ultrawide {
+    @extend .scale-1200;
+    @extend .scale-900;
+    @extend .scale-600;
+}
+
+.macbook-pro-14,
+.macbook-air,
+.surface-laptop,
+.laptop,
+.desktop,
+.monitor-4k {
+    @extend .scale-1000;
+    @extend .scale-800;
+    @extend .scale-600;
+}

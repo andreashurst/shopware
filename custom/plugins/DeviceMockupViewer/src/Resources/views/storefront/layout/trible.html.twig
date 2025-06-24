@@ -1,6 +1,6 @@
 {% extends "@DeviceMockupViewer/storefront/layout/base.html.twig" %}
 
-{% block title %}Responsive Layout Mockup{% endblock %}
+{% block title %}Trible Layout Mockup{% endblock %}
 
 {% block stylesheets %}
     {{ parent() }}
@@ -9,23 +9,21 @@
 
 {% block content %}
 <div class="layout-container">
-    <div class="responsive-layout">
-        <div class="responsive-desktop">
+    <div class="trible-layout">
+        <div class="trible-desktop">
             <div class="screen screen-base">
                 <iframe src="{{ cleanUrl }}" title="Desktop Mockup"></iframe>
             </div>
-            <div class="monitor-stand"></div>
         </div>
         
-        <div class="responsive-tablet">
+        <div class="trible-tablet">
             <div class="screen screen-base">
                 <iframe src="{{ cleanUrl }}" title="Tablet Mockup"></iframe>
             </div>
         </div>
         
-        <div class="responsive-phone">
+        <div class="trible-phone">
             <div class="screen screen-base">
-                <div class="dynamic-island"></div>
                 <iframe src="{{ cleanUrl }}" title="Phone Mockup"></iframe>
             </div>
         </div>
