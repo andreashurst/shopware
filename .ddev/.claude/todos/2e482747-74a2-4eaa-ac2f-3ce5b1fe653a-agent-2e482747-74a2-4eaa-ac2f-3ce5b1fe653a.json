@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Check current DDEV configuration and status",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Install Shopware via Composer",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Setup database and run migrations",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Configure routes and web server",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Set correct file permissions",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Install demo data",
+    "status": "pending",
+    "priority": "low",
+    "id": "6"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Check public directory and index.php",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Verify DDEV webserver configuration",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Fix file permissions if needed",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Test website access",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  }
+]

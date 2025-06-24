@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Examine current ddev configuration",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Import database if available",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Configure webspace for sulu.ddev.site URL",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update routing configuration",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Test site accessibility",
+    "status": "pending",
+    "priority": "medium",
+    "id": "5"
+  }
+]
